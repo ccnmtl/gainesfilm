@@ -5,7 +5,7 @@ Body : Repository:هتRare Book & Manuscript Library  Columbia University Collec
 Year : 
 Category : 
 Course : 
-DateCreated : 
+DateAdded : 
 Repository : Rare Book & Manuscript Library  Columbia University
 Collection : Pare Lorentz Papers
 Source : 

@@ -5,7 +5,7 @@ Body : Repository:هتRare Book & Manuscript Library  Columbia UniversityCollect
 Year : 1930
 Category : Motion Picture Set Design
 Course : Historiography
-DateCreated : 1930
+DateAdded : 1930
 Repository : Rare Book & Manuscript Library  Columbia University
 Collection : Joseph Urban papers
 Source : 

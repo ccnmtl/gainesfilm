@@ -5,7 +5,7 @@ Body : Repository:هتRare Book & Manuscript Library  Columbia UniversityCollect
 Year : 
 Category : 
 Course : 
-DateCreated : 
+DateAdded : 
 Repository : Rare Book & Manuscript Library  Columbia University
 Collection : Flaherty  Robert Papers
 Source : 

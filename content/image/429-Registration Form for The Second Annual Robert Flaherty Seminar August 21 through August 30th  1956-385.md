@@ -5,7 +5,7 @@ Body : Source:هتBox 6  Folder 16Repository:هتRare Book and Manuscript Librar
 Year : 1956
 Category : 
 Course : Documentary Tradition
-DateCreated : 1956
+DateAdded : 1956
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Amos Vogel Papers
 Source : Box 6  Folder 16

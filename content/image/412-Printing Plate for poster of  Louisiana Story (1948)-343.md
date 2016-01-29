@@ -5,7 +5,7 @@ Body : Source:هتBox 37  Advertising ‰غز Paper MaterialsRepository:هتRare
 Year : 
 Category : Documentary Tradition
 Course : Documentary Tradition
-DateCreated : 
+DateAdded : 
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Robert Flaherty Papers
 Source : Box 37  Advertising ‰غز Paper Materials

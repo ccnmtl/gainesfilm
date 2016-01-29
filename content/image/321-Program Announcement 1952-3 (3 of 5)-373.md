@@ -5,7 +5,7 @@ Body : Year:هت1952Notes:هتIncluded: ill. of program cover  ill. of The Quiet
 Year : 1952
 Category : Avant-Garde Historiography
 Course : Historiography
-DateCreated : 1952
+DateAdded : 1952
 Repository : 
 Collection : 
 Source : 

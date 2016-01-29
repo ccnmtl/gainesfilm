@@ -5,7 +5,7 @@ Body : Source:هتBox 1Repository:هتRare Book and Manuscript Library  Columbia
 Year : 1950
 Category : Documentary Tradition
 Course : Documentary Tradition
-DateCreated : 1950
+DateAdded : 1950
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Robert Flaherty Papers
 Source : Box 1

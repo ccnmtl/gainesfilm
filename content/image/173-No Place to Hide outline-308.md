@@ -5,7 +5,7 @@ Body : Repository:هتRare Book & Manuscript Library  Columbia University Collec
 Year : 1949-1950
 Category : 
 Course : 
-DateCreated : 1949-1950
+DateAdded : 1949-1950
 Repository : Rare Book & Manuscript Library  Columbia University
 Collection : Pare Lorentz Papers
 Source : 

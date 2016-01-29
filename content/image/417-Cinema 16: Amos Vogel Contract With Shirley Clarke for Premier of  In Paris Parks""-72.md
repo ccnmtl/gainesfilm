@@ -5,7 +5,7 @@ Body : Source:هتBox 6  Folder 2Repository:هتRare Book and Manuscript Library
 Year : 1955
 Category : Avant-Garde Historiography
 Course : Historiography
-DateCreated : 1955
+DateAdded : 1955
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Amos Vogel Papers
 Source : Box 6  Folder 2

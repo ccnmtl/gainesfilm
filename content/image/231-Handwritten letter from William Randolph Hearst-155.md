@@ -5,7 +5,7 @@ Body : Repository:هتRare Book & Manuscript Library  Columbia UniversityCollect
 Year : 1922
 Category : Motion Picture Set Design
 Course : 
-DateCreated : 1922
+DateAdded : 1922
 Repository : Rare Book & Manuscript Library  Columbia University
 Collection : Joseph Urban papers
 Source : 

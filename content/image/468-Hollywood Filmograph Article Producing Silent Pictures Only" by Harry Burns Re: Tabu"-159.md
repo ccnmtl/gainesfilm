@@ -5,7 +5,7 @@ Body : Source:هتBox 27  Folder: Tabu printed materials Repository:هتRare Boo
 Year : 4/13/1926
 Category : 
 Course : 
-DateCreated : 4/13/1926
+DateAdded : 4/13/1926
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Robert Flaherty Papers
 Source : Box 27  Folder: Tabu printed materials

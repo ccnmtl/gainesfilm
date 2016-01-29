@@ -5,7 +5,7 @@ Body : Source:هتNorman Film Co.Repository:هتIndiana UniversityCollection:ه�
 Year : 1922
 Category : Silent African American Cinema
 Course : Historiography
-DateCreated : 1922
+DateAdded : 1922
 Repository : Indiana University
 Collection : Black Film Archive
 Source : Norman Film Co.

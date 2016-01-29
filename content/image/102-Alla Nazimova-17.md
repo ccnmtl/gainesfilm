@@ -5,7 +5,7 @@ Body : Repository:هتMOMA stills archive Year:هت1923Film Title:هتSalomeDire
 Year : 1923
 Category : Women Film Pioneers
 Course : Historiography
-DateCreated : 1923
+DateAdded : 1923
 Repository : MOMA stills archive
 Collection : 
 Source : 

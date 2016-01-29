@@ -5,7 +5,7 @@ Body : Repository:هتRare Books and Manuscript Library  Columbia UniversityColl
 Year : 1928
 Category : Documentary Tradition
 Course : Historiography
-DateCreated : 1928
+DateAdded : 1928
 Repository : Rare Books and Manuscript Library  Columbia University
 Collection : Robert Flaherty Papers
 Source : 

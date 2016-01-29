@@ -5,7 +5,7 @@ Body : Repository:هتRare Book and Manuscript Library  Columbia UniversityColle
 Year : 1967
 Category : Celebrity Culture
 Course : Historiography
-DateCreated : 1967
+DateAdded : 1967
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Starr  C. Papers
 Source : 

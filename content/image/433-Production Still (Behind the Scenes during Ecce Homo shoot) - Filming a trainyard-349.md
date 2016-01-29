@@ -5,7 +5,7 @@ Body : Repository:هتColumbia University Rare Books & Manuscript LibraryCollect
 Year : 
 Category : Documentary Tradition
 Course : 
-DateCreated : 
+DateAdded : 
 Repository : Columbia University Rare Books & Manuscript Library
 Collection : Pare Lorentz Papers
 Source : 

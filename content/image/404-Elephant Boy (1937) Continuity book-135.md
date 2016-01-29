@@ -5,7 +5,7 @@ Body : Source:هتBox 31Repository:هتRare Book and Manuscript Library  Columbi
 Year : 
 Category : 
 Course : Documentary Tradition
-DateCreated : 
+DateAdded : 
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Robert Flaherty Papers
 Source : Box 31

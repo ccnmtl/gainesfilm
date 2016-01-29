@@ -5,7 +5,7 @@ Body : Source:هتEsquire magazineYear:هت1962Notes:هتResponse to MacDonald's
 Year : 1962
 Category : Avant-Garde Historiography
 Course : Historiography
-DateCreated : 1962
+DateAdded : 1962
 Repository : 
 Collection : 
 Source : Esquire magazine

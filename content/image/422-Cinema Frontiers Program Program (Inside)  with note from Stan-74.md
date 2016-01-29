@@ -5,7 +5,7 @@ Body : Source:هتBox 6  Folder 13Repository:هتRare Book and Manuscript Librar
 Year : 
 Category : 
 Course : Documentary Tradition
-DateCreated : 
+DateAdded : 
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Amos Vogel Papers
 Source : Box 6  Folder 13

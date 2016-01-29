@@ -5,7 +5,7 @@ Body : Repository:هتRare Book & Manuscript Library  Columbia UniversityCollect
 Year : 1940
 Category : Technological History
 Course : 
-DateCreated : 1940
+DateAdded : 1940
 Repository : Rare Book & Manuscript Library  Columbia University
 Collection : Sponable Papers
 Source : 

@@ -5,7 +5,7 @@ Body :
 Year : 
 Category : 
 Course : Historiography
-DateCreated : 
+DateAdded : 
 Repository : 
 Collection : 
 Source : 

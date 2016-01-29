@@ -5,7 +5,7 @@ Body :
 Year : 
 Category : 
 Course : Documentary Tradition
-DateCreated : 
+DateAdded : 
 Repository : 
 Collection : 
 Source : 

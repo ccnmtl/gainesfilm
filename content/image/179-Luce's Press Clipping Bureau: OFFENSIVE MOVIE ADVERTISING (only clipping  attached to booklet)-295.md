@@ -5,7 +5,7 @@ Body : Source:هتPrinter's InkRepository:هتRare Book & Manuscript Library  Co
 Year : 1940
 Category : 
 Course : 
-DateCreated : 1940
+DateAdded : 1940
 Repository : Rare Book & Manuscript Library  Columbia University
 Collection : Pare Lorentz Papers
 Source : Printer's Ink

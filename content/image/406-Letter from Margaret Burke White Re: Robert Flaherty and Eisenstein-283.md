@@ -5,7 +5,7 @@ Body : Source:هتBox 7  Correspondences 1930Repository:هتRare Book and Manusc
 Year : 1930
 Category : Documentary Tradition
 Course : Documentary Tradition
-DateCreated : 1930
+DateAdded : 1930
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Robert Flaherty Papers
 Source : Box 7  Correspondences 1930

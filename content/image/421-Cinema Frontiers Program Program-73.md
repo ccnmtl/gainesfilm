@@ -5,7 +5,7 @@ Body : Cinema Frontiers program: March 21; March 28; April 3; April 11Source:Ù‡Ø
 Year : 
 Category : Avant-Garde Historiography
 Course : Historiography
-DateCreated : 
+DateAdded : 
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Amos Vogel Papers
 Source : Box 6  Folder 16

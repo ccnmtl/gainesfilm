@@ -5,7 +5,7 @@ Body :
 Year : 
 Category : Avant-Garde Historiography
 Course : Historiography
-DateCreated : 
+DateAdded : 
 Repository : 
 Collection : 
 Source : 
