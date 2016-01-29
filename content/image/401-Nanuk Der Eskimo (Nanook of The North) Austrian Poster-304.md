@@ -5,7 +5,7 @@ Body : Visible Evidence  Robert Flaherty  Nanook of the NorthSource:هتBox 22Re
 Year : 1965
 Category : Documentary Tradition
 Course : Documentary Tradition Historiography
-DateCreated : 1965
+DateAdded : 1965
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Robert Flaherty Papers
 Source : Box 22

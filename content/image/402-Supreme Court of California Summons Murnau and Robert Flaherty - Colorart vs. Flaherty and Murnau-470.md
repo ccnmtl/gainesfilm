@@ -5,7 +5,7 @@ Body : Visible Evidence  Robert Flaherty  Tabu  Murnau test Source:هتBox 27Rep
 Year : 1932
 Category : Documentary Tradition
 Course : Documentary Tradition Historiography
-DateCreated : 1932
+DateAdded : 1932
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Robert Flaherty Papers
 Source : Box 27

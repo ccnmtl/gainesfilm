@@ -5,7 +5,7 @@ Body : Source:هتBox 7  Correspondences 1936 Repository:هتRare Book and Manus
 Year : 11/14/1936
 Category : 
 Course : 
-DateCreated : 11/14/1936
+DateAdded : 11/14/1936
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Robert Flaherty Papers
 Source : Box 7  Correspondences 1936

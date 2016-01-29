@@ -5,7 +5,7 @@ Body : Repository:هتRare Book & Manuscript Library  Columbia UniversityCollect
 Year : 1980
 Category : Motion Picture Screenplay Development
 Course : Historiography
-DateCreated : 1980
+DateAdded : 1980
 Repository : Rare Book & Manuscript Library  Columbia University
 Collection : Goldman  William Papers
 Source : 

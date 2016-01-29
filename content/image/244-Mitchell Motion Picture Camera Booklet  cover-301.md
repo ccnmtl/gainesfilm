@@ -5,7 +5,7 @@ Body : Repository:هتRare Book & Manuscript Library  Columbia UniversityCollect
 Year : 1927?
 Category : Technological History
 Course : 
-DateCreated : 1927?
+DateAdded : 1927?
 Repository : Rare Book & Manuscript Library  Columbia University
 Collection : Sponable Papers
 Source : 

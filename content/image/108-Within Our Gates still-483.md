@@ -5,7 +5,7 @@ Body : Year:هت1920Film Title:هتWithin Our GatesDirector:هتOscar MicheauxNo
 Year : 1920
 Category : Silent African American Cinema
 Course : Historiography
-DateCreated : 1920
+DateAdded : 1920
 Repository : 
 Collection : 
 Source : 

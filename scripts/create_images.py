@@ -1,5 +1,5 @@
 '''
-    Use csv exports of gainesfilm data to generate content documents in the content/documents folder
+    Use csv exports of gainesfilm data to generate content image files in the content/image folder
 '''
 import csv
 from subprocess import call

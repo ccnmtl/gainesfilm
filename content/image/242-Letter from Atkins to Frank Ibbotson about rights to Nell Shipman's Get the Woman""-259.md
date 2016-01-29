@@ -5,7 +5,7 @@ Body : Repository:هتRare Book and Manuscript Library  Columbia UniversityColle
 Year : 1932
 Category : Motion Picture Screenplay Development
 Course : Historiography
-DateCreated : 1932
+DateAdded : 1932
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : A. Watkins  Inc. Collection
 Source : 

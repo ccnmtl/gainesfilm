@@ -5,7 +5,7 @@ Body : Source:هتBox 135  Agnes VardaRepository:هتRare Book and Manuscript Li
 Year : 1950S
 Category : 
 Course : Documentary Tradition
-DateCreated : 1950S
+DateAdded : 1950S
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Amos Vogel Papers
 Source : Box 135  Agnes Varda

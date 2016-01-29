@@ -5,7 +5,7 @@ Body : Repository:هتRare Books and Manuscripts Library  Columbia UniversityCol
 Year : 1947
 Category : 
 Course : 
-DateCreated : 1947
+DateAdded : 1947
 Repository : Rare Books and Manuscripts Library  Columbia University
 Collection : Robert Flaherty Papers
 Source : 

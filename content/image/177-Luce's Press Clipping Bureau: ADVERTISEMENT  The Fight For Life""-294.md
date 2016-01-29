@@ -5,7 +5,7 @@ Body : Source:هتMotion Picture Herald  NYCRepository:هتRare Book & Manuscrip
 Year : 1940
 Category : 
 Course : 
-DateCreated : 1940
+DateAdded : 1940
 Repository : Rare Book & Manuscript Library  Columbia University
 Collection : Pare Lorentz Papers
 Source : Motion Picture Herald  NYC

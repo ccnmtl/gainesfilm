@@ -5,7 +5,7 @@ Body : Repository:هتRare Book & Manuscript Library  Columbia UniversityCollect
 Year : 1970
 Category : Celebrity Culture
 Course : Historiography
-DateCreated : 1970
+DateAdded : 1970
 Repository : Rare Book & Manuscript Library  Columbia University
 Collection : Goldman  William Papers
 Source : 

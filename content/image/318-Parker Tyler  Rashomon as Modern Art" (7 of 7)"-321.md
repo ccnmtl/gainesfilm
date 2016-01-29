@@ -5,7 +5,7 @@ Body : Year:هت1952Notes:هتCinema 16 pamphlet  1952; Included: illustration o
 Year : 1952
 Category : Avant-Garde Historiography
 Course : Historiography
-DateCreated : 1952
+DateAdded : 1952
 Repository : 
 Collection : 
 Source : 

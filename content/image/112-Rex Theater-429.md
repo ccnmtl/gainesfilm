@@ -5,7 +5,7 @@ Body : Repository:هتMuseum of Modern ArtYear:هت1912Notes:هتRex Theater  Ha
 Year : 1912
 Category : Silent African American Cinema
 Course : Historiography
-DateCreated : 1912
+DateAdded : 1912
 Repository : Museum of Modern Art
 Collection : 
 Source : 

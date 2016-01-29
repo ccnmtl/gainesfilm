@@ -5,7 +5,7 @@ Body : Repository:هتUCLA Special CollectionsCollection:هتGeorge P. Johnson C
 Year : 1921
 Category : Silent African American Cinema
 Course : Historiography
-DateCreated : 1921
+DateAdded : 1921
 Repository : UCLA Special Collections
 Collection : George P. Johnson Collection
 Source : 

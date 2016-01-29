@@ -5,7 +5,7 @@ Body : Source:هتBox 6  Folder 14Repository:هتRare Book and Manuscript Librar
 Year : 6/15/1954-7/31/1954
 Category : 
 Course : 
-DateCreated : 6/15/1954-7/31/1954
+DateAdded : 6/15/1954-7/31/1954
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Amos Vogel Papers
 Source : Box 6  Folder 14

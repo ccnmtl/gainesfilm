@@ -5,7 +5,7 @@ Body : Source:هتLincoln Motion Picture Co.Repository:هتUCLA Special Collecti
 Year : 
 Category : Silent African American Cinema
 Course : Historiography
-DateCreated : 
+DateAdded : 
 Repository : UCLA Special Collections
 Collection : George P. Johnson Collection
 Source : Lincoln Motion Picture Co.

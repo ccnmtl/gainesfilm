@@ -5,7 +5,7 @@ Body : Source:هتBox 27  Folder: The 24hr IslandRepository:هتRare Book and Ma
 Year : 1941
 Category : Documentary Tradition
 Course : Documentary Tradition Historiography
-DateCreated : 1941
+DateAdded : 1941
 Repository : Rare Book and Manuscript Library  Columbia University
 Collection : Robert Flaherty Papers
 Source : Box 27  Folder: The 24hr Island
