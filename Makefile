@@ -1,14 +1,16 @@
-runserver:
-	hugo --buildDrafts --verboseLog=true -v
-	hugo server --watch --buildDrafts --verboseLog=true -v --baseUrl=""
+STAGING_URL=https://gainesfilm.stage.ccnmtl.columbia.edu/
+PROD_URL=https://gainesfilm.ccnmtl.columbia.edu/
+STAGING_BUCKET=gainesfilm.stage.ccnmtl.columbia.edu
+PROD_BUCKET=gainesfilm.ccnmtl.columbia.edu
+#INTERMEDIATE_STEPS ?= make $(PUBLIC)/js/all.json
+INTERMEDIATE_STEPS ?= echo
 
-deploy:
-	rm -rf public/*
-	/usr/local/bin/hugo -s . -b 'https://gainesfilm.stage.ccnmtl.columbia.edu/' \
-	&& s3cmd --acl-public --delete-removed --no-progress sync --no-mime-magic --guess-mime-type public/* s3://gainesfilm.stage.ccnmtl.columbia.edu/
+JS_FILES=static/js/src
 
-s3-deploy:
-	rm -rf public/
-	/usr/local/bin/hugo -s . -b 'https://gainesfilm.ccnmtl.columbia.edu/'# \
-	#&& mv public/json/index.html public/js/api/cases.json \
-	#&& s3cmd --acl-public --delete-removed --no-progress sync --no-mime-magic --guess-mime-type public/* s3://gainesfilm.stage.ccnmtl.columbia.edu/
+all: jshint jscs
+
+include *.mk
+
+$(PUBLIC)/js/all.json: $(PUBLIC)/json/all/index.html
+	mkdir $(PUBLIC)/js/ || true
+	mv $< $@ && ./checkjson.py

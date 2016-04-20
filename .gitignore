@@ -1,3 +1,8 @@
 .project
 .pydevproject
 .settings/
+public
+.DS_Store
+._.DS_Store
+._*
+node_modules
