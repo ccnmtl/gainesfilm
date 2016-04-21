@@ -1,0 +1,16 @@
+---
+collection: Joseph Urban papers
+copyright: ''
+copyright_notes: ''
+director: ''
+film_title: ''
+location: Box 25, Folder 9
+notes: ''
+physical_description: ''
+repository: Rare Book & Manuscript Library, Columbia University
+src: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/1000102065.jpg
+taxonomies: [Image, Motion Picture Set Design, Historiography]
+title: Photograph of Color Key
+year: ''
+
+---

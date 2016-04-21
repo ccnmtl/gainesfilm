@@ -1,0 +1,17 @@
+---
+collection: Starr, C. Papers
+copyright: ''
+copyright_notes: ''
+director: ''
+film_title: ''
+location: Box 7, Folder 71
+notes: May 29, 1967
+physical_description: Copy of typed letter from Gregory Peck
+repository: Rare Book and Manuscript Library, Columbia University
+src: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/1000102088.jpg
+taxonomies: [Celebrity Culture, Document, Historiography]
+title: Letter from Gregory Peck to Cecile Starr about polemic article on Readers &
+  Writers
+year: '1967'
+
+---

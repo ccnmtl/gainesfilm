@@ -1,0 +1,17 @@
+---
+collection: Pare Lorentz Papers
+copyright: ''
+copyright_notes: ''
+director: ''
+film_title: ''
+location: Box 35, Series II.3
+notes: ''
+physical_description: Photograph
+repository: Rare Book & Manuscript Library, Columbia University
+src: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/1000102041.jpg
+taxonomies: [Image]
+title: Research still (2 children inside the service area of a house; white sink on
+  the left, background) - F45-4
+year: ''
+
+---

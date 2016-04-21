@@ -1,0 +1,17 @@
+---
+collection: Goldman, William Papers
+copyright: ''
+copyright_notes: ''
+director: George Roy Hill
+film_title: Butch Cassidy and the Sundance Kid
+location: Box 12, Folder 1
+notes: ''
+physical_description: 'Yellow typed page with handwritting. Top reads: "BUTCH | --
+  from way back then?"'
+repository: Rare Book & Manuscript Library, Columbia University
+src: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/1000102108.jpg
+taxonomies: [Document, Motion Picture Screenplay Development, Historiography]
+title: 'Script: "Butch Cassidy and the Sundance Kid" - Page numbered -4-'
+year: '1968'
+
+---

@@ -1,0 +1,19 @@
+---
+collection: Joseph Urban papers
+copyright: ''
+copyright_notes: ''
+director: ''
+film_title: ''
+location: Box 28, folder 1
+notes: 'back reads: "Stages 5 and 6 #3 | Stages 5 and 6, recently completed at Movietone
+  City, make a total of nine model sound stages built especially for the production
+  of all-talking pictures. Erection of additional stages comes in preparation of the
+  concentration of all Fox Film activities at Movietone City by early in 1931.'
+physical_description: Photograph
+repository: Rare Book & Manuscript Library, Columbia University
+src: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/1000102083.jpg
+taxonomies: [Image, Motion Picture Set Design, Historiography]
+title: Photo of Fox Studios, Stage 6 (#3)
+year: '1930'
+
+---
