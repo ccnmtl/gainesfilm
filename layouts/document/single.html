@@ -7,6 +7,33 @@
 {{ end }}
 
 <dl>
+    {{ if .Params.categories }}
+    <dt>Category {{ len .Params.categories }}</dt>
+    <dd>
+        {{ range .Params.categories }}
+        <a href="/categories/{{ . | urlize }}/">{{ . }}</a>
+        {{ end }}
+    </dd>
+    {{ end }}
+
+    {{ if .Params.courses }}
+    <dt>Course</dt>
+    <dd>
+        {{ range .Params.courses }}
+        <a href="/courses/{{ . | urlize }}/">{{ . }}</a>
+        {{ end }}
+    </dd>
+    {{ end }}
+
+    <dt>Media</dt>
+    <dd>
+        {{ range .Params.media }}
+        <a href="/media/{{ . | urlize }}/">{{ . }}</a>
+        {{ end }}
+    </dd>
+</dl>
+
+<dl>
     {{ if .Params.year }}
     <dt>Year</dt>
     <dd>{{ .Params.year }}</dd>
