@@ -4,11 +4,12 @@ copyright: ''
 copyright_notes: ''
 director: ''
 film_title: ''
+image_src: ebony.jpg
+image_url: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/ebony.jpg
 location: ''
 notes: ''
 physical_description: ''
 repository: Library of Congress
-src: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/ebony.jpg
 taxonomies: [Image, Historiography, Silent African American Cinema]
 title: Ebony Film Company
 year: ''

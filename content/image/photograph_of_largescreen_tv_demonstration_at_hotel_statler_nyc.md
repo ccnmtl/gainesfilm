@@ -4,6 +4,8 @@ copyright: ''
 copyright_notes: ''
 director: ''
 film_title: ''
+image_src: 1000102099.jpg
+image_url: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/1000102099.jpg
 location: Box 42, Folder Television, Large-Screen - Demonstration
 notes: "Caption reads: \"Members of the Society of Motion Picture Engineers saw entertainment\
   \ history in the making at the Hotel Statler, in New York City, on April 4 (1949),\
@@ -17,7 +19,6 @@ notes: "Caption reads: \"Members of the Society of Motion Picture Engineers saw 
   \r\n\r\nDate: April 4, 1949"
 physical_description: Photograph
 repository: Rare Book & Manuscript Library, Columbia University
-src: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/1000102099.jpg
 taxonomies: [Image, Technological History]
 title: Photograph of Large-Screen TV demonstration at Hotel Statler, NYC
 year: '1949'

@@ -3,6 +3,7 @@ from requests import Session
 import os
 import yaml
 from bs4 import BeautifulSoup
+from urllib.parse import urlparse
 
 
 HOST = "gainesfilm.qa-lamp.ccnmtl.columbia.edu"
@@ -45,6 +46,9 @@ class Site(object):
     def get_library_page(self, page):
         return LibraryPage(self.session, page)
 
+    def get_url(self, url):
+        return self.session.get(url)
+
 
 class Fetchable(object):
     def fetch(self):
@@ -85,6 +89,12 @@ class LibraryPage(Fetchable):
                 yield NodePage(self.session, ntype, path)
             except AttributeError:
                 pass
+
+
+def image_url_to_local_filename(url):
+    o = urlparse(url)
+    basename = os.path.basename(o.path)
+    return os.path.join('static/imgs/', basename)
 
 
 def escape(s):
@@ -210,7 +220,8 @@ class Image(BaseType):
 
     def extra_fields(self):
         return {
-            'src': self.image_src(),
+            'image_url': self.image_src(),
+            'image_src': self.image_path,
         }
 
 
@@ -236,7 +247,8 @@ class Document(BaseType):
 
     def extra_fields(self):
         return {
-            'src': self.image_src(),
+            'image_url': self.image_src(),
+            'image_src': self.image_path,
         }
 
 
@@ -262,7 +274,6 @@ class NodePage(Fetchable):
         return node_types[self.ntype](self.path, self.fetch())
 
 
-
 def main():
     username = os.environ['GAINES_USER']
     password = os.environ['GAINES_PASSWORD']
@@ -274,6 +285,14 @@ def main():
         lp = s.get_library_page(pagenum)
         for node in lp.linked_nodes():
             nt = node.get()
+            if nt.image_src() != '':
+                image_filename = image_url_to_local_filename(nt.image_src())
+                with open(image_filename, 'wb') as imagef:
+                    r = s.get_url(nt.image_src())
+                    for chunk in r:
+                        imagef.write(chunk)
+                    print("wrote image {}".format(image_filename))
+                    nt.image_path = os.path.basename(image_filename)
             filename = nt.local_path()
             print(filename)
             with open(filename, 'w') as f:

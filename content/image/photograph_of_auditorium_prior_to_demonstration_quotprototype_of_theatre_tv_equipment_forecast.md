@@ -4,6 +4,8 @@ copyright: ''
 copyright_notes: ''
 director: ''
 film_title: ''
+image_src: 1000102100.jpg
+image_url: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/1000102100.jpg
 location: Box 42, Folder Television, Large-Screen - Demonstration
 notes: "Caption reads: Lates equipment for projection of theatre-size television images\
   \ (15 by 20 feet), which was demonstrated by the Radio Corporation of America for\
@@ -21,7 +23,6 @@ notes: "Caption reads: Lates equipment for projection of theatre-size television
   \ possibly by the end of 1949.\r\n\r\nDate: April 4, 1949"
 physical_description: Photograph
 repository: Rare Book & Manuscript Library, Columbia University
-src: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/1000102100.jpg
 taxonomies: [Image, Technological History]
 title: 'Photograph of Auditorium Prior to Demonstration: "Prototype of Theatre TV
   Equipment Forecast by Year''s End"'

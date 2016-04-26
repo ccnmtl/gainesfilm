@@ -4,11 +4,12 @@ copyright: ''
 copyright_notes: ''
 director: ''
 film_title: ''
+image_src: K_hilliker-caldwell_sun_82603-2.jpg
+image_url: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/K_hilliker-caldwell_sun_82603-2.jpg
 location: ''
 notes: ''
 physical_description: ''
 repository: ''
-src: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/K_hilliker-caldwell_sun_82603-2.jpg
 taxonomies: [Document, Women Film Pioneers, Historiography]
 title: Katherine Hiliker-Caldwell-"Sunrise" titles (2 of 3)
 year: '1927'
