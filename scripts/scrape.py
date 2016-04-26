@@ -287,12 +287,13 @@ def main():
             nt = node.get()
             if nt.image_src() != '':
                 image_filename = image_url_to_local_filename(nt.image_src())
-                with open(image_filename, 'wb') as imagef:
-                    r = s.get_url(nt.image_src())
-                    for chunk in r:
-                        imagef.write(chunk)
-                    print("wrote image {}".format(image_filename))
-                    nt.image_path = os.path.basename(image_filename)
+                if not os.path.exists(image_filename):
+                    with open(image_filename, 'wb') as imagef:
+                        r = s.get_url(nt.image_src())
+                        for chunk in r:
+                            imagef.write(chunk)
+                        print("wrote image {}".format(image_filename))
+                        nt.image_path = os.path.basename(image_filename)
             filename = nt.local_path()
             print(filename)
             with open(filename, 'w') as f:
