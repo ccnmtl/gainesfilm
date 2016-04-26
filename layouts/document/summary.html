@@ -1,8 +1,24 @@
 <tr>
     <td><a href="{{.RelPermalink}}">{{.Title}}</a></td>
-    <td>{{.Params.year}}</td>
-    <td>{{ if .Params.category }}{{.Params.category}}{{ end }}</td>
-    <td>{{ if .Params.course }}{{.Params.course}}{{ end }}</td>
-    <td>Document</td>
+    <td>
+        {{ range .Params.years }}
+        <a href="/years/{{ . | urlize }}/">{{ . }}</a>
+        {{ end }}
+    </td>
+    <td>
+        {{ range .Params.categories }}
+        <a href="/categories/{{ . | urlize }}/">{{ . }}</a>
+        {{ end }}
+    </td>
+    <td>
+        {{ range .Params.courses }}
+        <a href="/courses/{{ . | urlize }}/">{{ . }}</a>
+        {{ end }}
+    </td>
+    <td>
+        {{ range .Params.media }}
+        <a href="/media/{{ . | urlize }}/">{{ . }}</a>
+        {{ end }}
+    </td>
 </tr>
 

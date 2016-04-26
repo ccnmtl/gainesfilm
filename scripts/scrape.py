@@ -128,9 +128,13 @@ class BaseType(object):
         d = {
             'title': str(self.title()),
             'category': str(self.category),
+            'categories': [str(self.category)],
             'course': str(self.course),
+            'courses': [str(self.course)],
+            'media': [str(self.ntype())],
             'taxonomies': list(self.taxonomies()),
             'year': self.year(),
+            'years': [self.year()],
             'repository': self.repository(),
             'location': self.location(),
             'collection': self.collection(),

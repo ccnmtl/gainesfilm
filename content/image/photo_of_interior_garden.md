@@ -1,14 +1,17 @@
 ---
+categories: [Motion Picture Set Design]
 category: Motion Picture Set Design
 collection: Joseph Urban papers
 copyright: ''
 copyright_notes: ''
 course: Historiography
+courses: [Historiography]
 director: ''
 film_title: ''
 image_src: 1000102084.jpg
 image_url: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/1000102084.jpg
 location: Box 28, folder 1
+media: [image]
 notes: 'Back reads: "Photo shows patio of Hall of Music at Fox-Movietone City. Muse
   of Music, sculptured by Mahonri Young. Plaques above the doorways bear the likeness
   of great composers in bas-relief. In this building Fox song-writers, composers and
@@ -18,5 +21,6 @@ repository: Rare Book & Manuscript Library, Columbia University
 taxonomies: [Image, Motion Picture Set Design, Historiography]
 title: Photo of interior garden
 year: '1930'
+years: ['1930']
 
 ---

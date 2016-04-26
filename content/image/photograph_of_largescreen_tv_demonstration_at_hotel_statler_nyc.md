@@ -1,14 +1,17 @@
 ---
+categories: [Technological History]
 category: Technological History
 collection: Sponable Papers
 copyright: ''
 copyright_notes: ''
 course: ''
+courses: ['']
 director: ''
 film_title: ''
 image_src: 1000102099.jpg
 image_url: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/1000102099.jpg
 location: Box 42, Folder Television, Large-Screen - Demonstration
+media: [image]
 notes: "Caption reads: \"Members of the Society of Motion Picture Engineers saw entertainment\
   \ history in the making at the Hotel Statler, in New York City, on April 4 (1949),\
   \ when RCA gave the first demonstration of its latest projection equipment for theatre-size\
@@ -24,5 +27,6 @@ repository: Rare Book & Manuscript Library, Columbia University
 taxonomies: [Image, Technological History]
 title: Photograph of Large-Screen TV demonstration at Hotel Statler, NYC
 year: '1949'
+years: ['1949']
 
 ---

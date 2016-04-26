@@ -1,14 +1,17 @@
 ---
+categories: [Technological History]
 category: Technological History
 collection: Sponable Papers
 copyright: ''
 copyright_notes: ''
 course: ''
+courses: ['']
 director: ''
 film_title: ''
 image_src: 1000102100.jpg
 image_url: http://gainesfilm.qa-lamp.ccnmtl.columbia.edu/sites/files/gainesfilm/images/1000102100.jpg
 location: Box 42, Folder Television, Large-Screen - Demonstration
+media: [image]
 notes: "Caption reads: Lates equipment for projection of theatre-size television images\
   \ (15 by 20 feet), which was demonstrated by the Radio Corporation of America for\
   \ the first time on April 4 (1949) at the 65th semi-annual convention of the Society\
@@ -29,5 +32,6 @@ taxonomies: [Image, Technological History]
 title: 'Photograph of Auditorium Prior to Demonstration: "Prototype of Theatre TV
   Equipment Forecast by Year''s End"'
 year: '1949'
+years: ['1949']
 
 ---

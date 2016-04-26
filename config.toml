@@ -2,3 +2,9 @@ baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 paginate = 20
+
+[taxonomies]
+course = "courses"
+category = "categories"
+media = "media"
+year = "years"
