@@ -1,5 +1,5 @@
 ---
-categories: ['']
+categories: []
 category: ''
 collection: Amos Vogel Papers
 copyright: ''

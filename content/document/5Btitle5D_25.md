@@ -1,11 +1,11 @@
 ---
-categories: ['']
+categories: []
 category: ''
 collection: Robert Flaherty Papers
 copyright: ''
 copyright_notes: ''
 course: ''
-courses: ['']
+courses: []
 director: ''
 film_title: ''
 image_src: 1000102016.jpg

@@ -1,11 +1,11 @@
 ---
-categories: ['']
+categories: []
 category: ''
 collection: ''
 copyright: ''
 copyright_notes: ''
 course: ''
-courses: ['']
+courses: []
 director: ''
 film_title: ''
 image_src: 1000102009.jpg

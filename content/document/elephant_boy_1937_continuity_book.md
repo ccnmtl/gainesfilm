@@ -1,5 +1,5 @@
 ---
-categories: ['']
+categories: []
 category: ''
 collection: Robert Flaherty Papers
 copyright: ''

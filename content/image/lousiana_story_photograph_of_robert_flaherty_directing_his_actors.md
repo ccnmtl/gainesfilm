@@ -1,11 +1,11 @@
 ---
-categories: ['']
+categories: []
 category: ''
 collection: Flaherty, Robert Papers
 copyright: ''
 copyright_notes: ''
 course: ''
-courses: ['']
+courses: []
 director: Flaherty
 film_title: Lousiana Story
 image_src: 1000102117.jpg

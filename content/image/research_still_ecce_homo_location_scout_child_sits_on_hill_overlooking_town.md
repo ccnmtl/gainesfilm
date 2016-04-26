@@ -6,7 +6,7 @@ copyright: ''
 copyright_notes: Ethnographic photo attributed to Ed Locke; from Ecce Homo Location
   Scout
 course: ''
-courses: ['']
+courses: []
 director: ''
 film_title: ''
 image_src: 110094039.jpg

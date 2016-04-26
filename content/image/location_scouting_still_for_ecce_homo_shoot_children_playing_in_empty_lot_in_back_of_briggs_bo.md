@@ -5,7 +5,7 @@ collection: Pare Lorentz Papers
 copyright: ''
 copyright_notes: ''
 course: ''
-courses: ['']
+courses: []
 director: Pare Lorentz
 film_title: ''
 image_src: 110094028.jpg

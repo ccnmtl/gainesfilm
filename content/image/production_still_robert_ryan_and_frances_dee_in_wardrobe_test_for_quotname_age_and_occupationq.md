@@ -5,7 +5,7 @@ collection: Pare Lorentz Papers - Columbia University Rare Books & Manuscript Li
 copyright: ''
 copyright_notes: ''
 course: ''
-courses: ['']
+courses: []
 director: ''
 film_title: ''
 image_src: 110094033.jpg

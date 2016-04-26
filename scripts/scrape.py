@@ -128,9 +128,9 @@ class BaseType(object):
         d = {
             'title': str(self.title()),
             'category': str(self.category),
-            'categories': [str(self.category)],
+            'categories': self.categories(),
             'course': str(self.course),
-            'courses': [str(self.course)],
+            'courses': self.courses(),
             'media': [str(self.ntype())],
             'taxonomies': list(self.taxonomies()),
             'year': self.year(),
@@ -160,6 +160,18 @@ class BaseType(object):
 
     def title(self):
         return self.soup.h1.string
+
+    def categories(self):
+        if self.category != '':
+            return [str(self.category)]
+        else:
+            return []
+
+    def courses(self):
+        if self.course != '':
+            return [str(self.course)]
+        else:
+            return []
 
     def get_field1(self, fieldname):
         d = self.soup.find('div', class_="field-field-{}".format(fieldname))

@@ -1,11 +1,11 @@
 ---
-categories: ['']
+categories: []
 category: ''
 collection: Amos Vogel Papers
 copyright: ''
 copyright_notes: ''
 course: ''
-courses: ['']
+courses: []
 director: ''
 film_title: ''
 image_src: 110094077.jpg

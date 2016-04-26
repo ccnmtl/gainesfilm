@@ -5,7 +5,7 @@ collection: Joseph Urban papers
 copyright: ''
 copyright_notes: ''
 course: ''
-courses: ['']
+courses: []
 director: ''
 film_title: ''
 image_src: 1000102076.jpg
