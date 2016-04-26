@@ -1,0 +1,60 @@
+{{ partial "header.html" }}
+
+<h1>{{.Title}}</h1>
+
+<dl>
+    {{ if .Params.year }}
+    <dt>Year</dt>
+    <dd>{{ .Params.year }}</dd>
+    {{ end }}
+
+    {{ if .Params.collection }}
+    <dt>Collection</dt>
+    <dd>{{ .Params.collection }}</dd>
+    {{ end }}
+
+    {{ if .Params.copyright }}
+    <dt>Copyright</dt>
+    <dd>{{ .Params.copyright }}</dd>
+    {{ end }}
+
+    {{ if .Params.copyright_notes }}
+    <dt>Copyright Notes</dt>
+    <dd>{{ .Params.copyright_notes }}</dd>
+    {{ end }}
+    
+    {{ if .Params.director }}
+    <dt>Director</dt>
+    <dd>{{ .Params.director }}</dd>
+    {{ end }}
+
+    {{ if .Params.film_title }}
+    <dt>Film Title</dt>
+    <dd>{{ .Params.film_title }}</dd>
+    {{ end }}
+
+    {{ if .Params.location }}
+    <dt>Location</dt>
+    <dd>{{ .Params.location }}</dd>
+    {{ end }}
+
+    {{ if .Params.notes }}
+    <dt>Notes</dt>
+    <dd>{{ .Params.notes }}</dd>
+    {{ end }}
+
+    {{ if .Params.physical_description }}
+    <dt>Physical Description</dt>
+    <dd>{{ .Params.physical_description }}</dd>
+    {{ end }}
+
+    {{ if .Params.repository }}
+    <dt>Repository</dt>
+    <dd>{{ .Params.repository }}</dd>
+    {{ end }}
+
+</dl>
+
+<p>Sorry, media embeds are not ported yet</p>
+
+{{ partial "footer.html" }}
