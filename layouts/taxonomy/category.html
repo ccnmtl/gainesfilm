@@ -2,6 +2,8 @@
 
 <h2>{{.Data.Singular}}: {{.Title}}</h2>
 
+{{ $paginator := .Paginate .Data.Pages }}
+
 <table class="table table-striped table-condensed">
     <thead>
         <tr>
@@ -14,10 +16,12 @@
     </thead>
     <tbody>
         
-        {{range .Data.Pages}}
+        {{range $paginator.Pages}}
         {{.Render "summary" }}
         {{ end }}
     </tbody>
 </table>
+
+{{ template "_internal/pagination.html" . }}
 
 {{ partial "footer.html" }}
