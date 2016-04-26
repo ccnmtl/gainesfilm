@@ -1,7 +1,9 @@
 ---
+category: Motion Picture Set Design
 collection: Joseph Urban papers
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: Robert Z. Leonard
 film_title: Resltess Sex
 image_src: 1000102069.jpg

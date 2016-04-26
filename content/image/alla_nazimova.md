@@ -1,7 +1,9 @@
 ---
+category: Women Film Pioneers
 collection: ''
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: Charles Bryant
 film_title: Salome
 image_src: nazimova.jpg

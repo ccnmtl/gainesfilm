@@ -1,7 +1,9 @@
 ---
+category: Silent African American Cinema
 collection: George P. Johnson Collection
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: Oscar Micheaux
 film_title: Gunsaulus Mystery Story
 image_src: Gunsaulus Mystery Story.jpg

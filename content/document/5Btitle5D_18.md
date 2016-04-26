@@ -1,7 +1,9 @@
 ---
+category: ''
 collection: Robert Flaherty Papers
 copyright: ''
 copyright_notes: ''
+course: ''
 director: ''
 film_title: ''
 image_src: 1000102014.jpg

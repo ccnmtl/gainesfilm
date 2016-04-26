@@ -1,7 +1,9 @@
 ---
+category: Motion Picture Set Design
 collection: Joseph Urban papers
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: George D. Baker
 film_title: Buried Treasure (?) or Bride's Play (?)
 image_src: 1000102072.jpg

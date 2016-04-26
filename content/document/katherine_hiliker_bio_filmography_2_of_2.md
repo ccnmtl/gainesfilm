@@ -1,7 +1,9 @@
 ---
+category: Women Film Pioneers
 collection: ''
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: ''
 image_src: H_katherine_hilliker_bi_82523-2.jpg

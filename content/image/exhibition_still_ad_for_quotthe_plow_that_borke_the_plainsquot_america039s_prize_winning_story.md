@@ -1,7 +1,9 @@
 ---
+category: Documentary Tradition
 collection: Pare Lorentz Papers
 copyright: ''
 copyright_notes: ''
+course: Documentary Tradition
 director: ''
 film_title: ''
 image_src: 1000102050.jpg

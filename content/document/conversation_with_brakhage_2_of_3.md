@@ -1,7 +1,9 @@
 ---
+category: Avant-Garde Historiography
 collection: ''
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: Hallelujah
 image_src: brakhage_conversation2.jpg

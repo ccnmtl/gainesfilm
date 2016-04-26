@@ -1,7 +1,9 @@
 ---
+category: Motion Picture Set Design
 collection: Joseph Urban papers
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: World and His Wife
 image_src: 1000102126.jpg

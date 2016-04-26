@@ -1,7 +1,9 @@
 ---
+category: ''
 collection: Amos Vogel Papers
 copyright: ''
 copyright_notes: ''
+course: Documentary Tradition
 director: ''
 film_title: ''
 image_src: 110094060.jpg

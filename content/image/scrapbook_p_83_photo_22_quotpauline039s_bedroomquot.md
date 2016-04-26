@@ -1,7 +1,9 @@
 ---
+category: Motion Picture Set Design
 collection: Joseph Urban papers
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: Buried Treasures
 image_src: 1000102128.jpg

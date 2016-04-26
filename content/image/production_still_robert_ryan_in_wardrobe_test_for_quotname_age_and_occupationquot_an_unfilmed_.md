@@ -1,7 +1,9 @@
 ---
+category: Documentary Tradition
 collection: Pare Lorentz Papers - Columbia University Rare Books & Manuscript Library
 copyright: ''
 copyright_notes: ''
+course: ''
 director: ''
 film_title: ''
 image_src: 110094032.jpg

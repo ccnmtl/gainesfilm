@@ -1,7 +1,9 @@
 ---
+category: Women Film Pioneers
 collection: Cecil B. DeMille
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: ''
 image_src: B_demille_1933_letters6.jpg

@@ -1,7 +1,9 @@
 ---
+category: Motion Picture Set Design
 collection: Joseph Urban papers
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: Frank Lloyd
 film_title: East Lynne
 image_src: 1000102085.jpg

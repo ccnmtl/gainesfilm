@@ -1,7 +1,9 @@
 ---
+category: Women Film Pioneers
 collection: ''
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: ''
 image_src: D_hilliker_cabinet_dr.__82541-3.jpg

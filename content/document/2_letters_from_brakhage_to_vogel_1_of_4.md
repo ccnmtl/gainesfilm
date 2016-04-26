@@ -1,7 +1,9 @@
 ---
+category: Avant-Garde Historiography
 collection: ''
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: ''
 image_src: vogel-brakhage_letters1.jpg

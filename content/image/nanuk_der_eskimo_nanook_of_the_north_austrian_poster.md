@@ -1,7 +1,9 @@
 ---
+category: Documentary Tradition
 collection: Robert Flaherty Papers
 copyright: ''
 copyright_notes: ''
+course: Documentary Tradition
 director: Robert Flaherty
 film_title: Nanook of the North
 image_src: 110094006.jpg

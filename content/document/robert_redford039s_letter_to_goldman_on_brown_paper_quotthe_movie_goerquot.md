@@ -1,7 +1,9 @@
 ---
+category: Celebrity Culture
 collection: Goldman, William Papers
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: ''
 image_src: 1000102110.jpg

@@ -1,7 +1,9 @@
 ---
+category: ''
 collection: Joseph Urban papers
 copyright: ''
 copyright_notes: ''
+course: ''
 director: George D. Baker
 film_title: Buried Treasure
 image_src: 1000102071.jpg

@@ -1,8 +1,10 @@
 ---
+category: Documentary Tradition
 collection: Pare Lorentz Papers
 copyright: ''
 copyright_notes: Ethnographic photo attributed to Ed Locke; from Ecce Homo Location
   Scout
+course: ''
 director: ''
 film_title: ''
 image_src: 110094039.jpg

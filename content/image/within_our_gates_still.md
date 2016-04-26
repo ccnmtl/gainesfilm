@@ -1,7 +1,9 @@
 ---
+category: Silent African American Cinema
 collection: ''
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: Oscar Micheaux
 film_title: Within Our Gates
 image_src: withinourgates.jpg

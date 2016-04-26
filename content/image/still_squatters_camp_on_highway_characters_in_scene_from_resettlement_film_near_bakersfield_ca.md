@@ -1,7 +1,9 @@
 ---
+category: ''
 collection: Pare Lorentz Papers
 copyright: ''
 copyright_notes: ''
+course: ''
 director: ''
 film_title: ''
 image_src: 1000102052.jpg

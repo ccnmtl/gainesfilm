@@ -1,8 +1,8 @@
 <tr>
     <td><a href="{{.RelPermalink}}">{{.Title}}</a></td>
     <td>{{.Params.year}}</td>
-    <td></td>
-    <td></td>
-    <td>document</td>
+    <td>{{ if .Params.category }}{{.Params.category}}{{ end }}</td>
+    <td>{{ if .Params.course }}{{.Params.course}}{{ end }}</td>
+    <td>Document</td>
 </tr>
 

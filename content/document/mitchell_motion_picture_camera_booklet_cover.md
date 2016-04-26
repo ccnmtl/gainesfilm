@@ -1,7 +1,9 @@
 ---
+category: Technological History
 collection: Sponable Papers
 copyright: ''
 copyright_notes: ''
+course: ''
 director: ''
 film_title: ''
 image_src: 1000102089.jpg

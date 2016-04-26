@@ -1,7 +1,9 @@
 ---
+category: Celebrity Culture
 collection: Joseph Urban papers
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: Bride's Play
 image_src: 1000102075.jpg

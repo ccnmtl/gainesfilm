@@ -1,7 +1,9 @@
 ---
+category: Motion Picture Set Design
 collection: Joseph Urban papers
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: Robert G. Vignola
 film_title: When Knighthood Was in Flower
 image_src: 1000102079.jpg

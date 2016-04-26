@@ -1,7 +1,9 @@
 ---
+category: Silent African American Cinema
 collection: Black Film Archive
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: Richard E. Norman
 film_title: The Flying Ace
 image_src: flyingace.jpg

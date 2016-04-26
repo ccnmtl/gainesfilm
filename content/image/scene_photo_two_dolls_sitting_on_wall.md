@@ -1,7 +1,9 @@
 ---
+category: Motion Picture Set Design
 collection: Joseph Urban papers
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: Robert G. Vignola
 film_title: Beauty's Worth
 image_src: 1000102077.jpg

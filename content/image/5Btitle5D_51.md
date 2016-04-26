@@ -1,7 +1,9 @@
 ---
+category: ''
 collection: Flaherty, Robert Papers
 copyright: ''
 copyright_notes: ''
+course: ''
 director: Flaherty
 film_title: Nanook of the North
 image_src: 1000102120.jpg

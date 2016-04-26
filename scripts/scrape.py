@@ -60,6 +60,20 @@ class Fetchable(object):
         return self.soup
 
 
+def category_from_td(td):
+    try:
+        return td.next_sibling.next_sibling.ul.li.a.string
+    except AttributeError:
+        return ""
+
+
+def course_from_td(td):
+    try:
+        return td.next_sibling.next_sibling.next_sibling.ul.li.a.string
+    except AttributeError:
+        return ""
+
+
 class LibraryPage(Fetchable):
     def __init__(self, session, pagenum):
         self.session = session
@@ -86,7 +100,9 @@ class LibraryPage(Fetchable):
             path = a.attrs['href']
             try:
                 ntype = td.next_sibling.next_sibling.next_sibling.next_sibling.ul.li.a.string
-                yield NodePage(self.session, ntype, path)
+                category = category_from_td(td)
+                course = course_from_td(td)
+                yield NodePage(self.session, ntype, category, course, path)
             except AttributeError:
                 pass
 
@@ -102,13 +118,17 @@ def escape(s):
 
 
 class BaseType(object):
-    def __init__(self, path, soup):
+    def __init__(self, path, category, course, soup):
+        self.category = category
+        self.course = course
         self.path = path
         self.soup = soup
 
     def as_dict(self):
         d = {
             'title': str(self.title()),
+            'category': str(self.category),
+            'course': str(self.course),
             'taxonomies': list(self.taxonomies()),
             'year': self.year(),
             'repository': self.repository(),
@@ -260,9 +280,11 @@ node_types = {
 
 
 class NodePage(Fetchable):
-    def __init__(self, session, ntype, path):
+    def __init__(self, session, ntype, category, course, path):
         self.session = session
         self.ntype = ntype
+        self.category = category
+        self.course = course
         self.path = path
         self.text = ""
         self.soup = None
@@ -271,7 +293,8 @@ class NodePage(Fetchable):
         return "http://{}{}".format(HOST, self.path)
 
     def get(self):
-        return node_types[self.ntype](self.path, self.fetch())
+        return node_types[self.ntype](self.path, self.category, self.course,
+                                      self.fetch())
 
 
 def main():
@@ -293,7 +316,7 @@ def main():
                         for chunk in r:
                             imagef.write(chunk)
                         print("wrote image {}".format(image_filename))
-                        nt.image_path = os.path.basename(image_filename)
+                nt.image_path = os.path.basename(image_filename)
             filename = nt.local_path()
             print(filename)
             with open(filename, 'w') as f:

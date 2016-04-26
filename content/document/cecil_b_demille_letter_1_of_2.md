@@ -1,7 +1,9 @@
 ---
+category: Women Film Pioneers
 collection: Cecil B. DeMille Collection
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: ''
 image_src: C_demille_letter_1918-1.jpg

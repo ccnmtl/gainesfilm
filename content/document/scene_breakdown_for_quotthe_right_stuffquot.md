@@ -1,7 +1,9 @@
 ---
+category: Motion Picture Screenplay Development
 collection: Goldman, William Papers
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: Philip Kaufman
 film_title: The Right Stuff
 image_src: 1000102109.jpg

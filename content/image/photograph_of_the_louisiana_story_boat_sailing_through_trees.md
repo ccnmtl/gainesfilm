@@ -1,7 +1,9 @@
 ---
+category: ''
 collection: Flaherty, Robert Papers
 copyright: ''
 copyright_notes: ''
+course: ''
 director: Flaherty
 film_title: Louisiana Story
 image_src: 1000102114.jpg

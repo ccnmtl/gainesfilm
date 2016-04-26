@@ -1,7 +1,9 @@
 ---
+category: ''
 collection: Flaherty, Robert Papers
 copyright: ''
 copyright_notes: ''
+course: ''
 director: ''
 film_title: ''
 image_src: 1000102115.jpg

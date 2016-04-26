@@ -1,7 +1,9 @@
 ---
+category: Motion Picture Set Design
 collection: ''
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: ''
 image_src: 1000102004.jpg

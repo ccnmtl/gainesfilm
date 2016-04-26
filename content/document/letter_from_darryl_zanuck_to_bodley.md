@@ -1,7 +1,9 @@
 ---
+category: Motion Picture Screenplay Development
 collection: A. Watkins, Inc. Collection
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: "\uFEFF\uFEFF\uFEFF"
 image_src: 1000102086.jpg

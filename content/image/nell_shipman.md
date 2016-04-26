@@ -1,7 +1,9 @@
 ---
+category: Women Film Pioneers
 collection: ''
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: Neil Shipman
 film_title: The Trail of the North Wind
 image_src: shipman.jpg

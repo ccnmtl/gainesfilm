@@ -1,7 +1,9 @@
 ---
+category: Silent African American Cinema
 collection: ''
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: ''
 image_src: ebony.jpg

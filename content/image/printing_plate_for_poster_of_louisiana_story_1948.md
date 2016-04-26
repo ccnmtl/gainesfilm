@@ -1,7 +1,9 @@
 ---
+category: Documentary Tradition
 collection: Robert Flaherty Papers
 copyright: ''
 copyright_notes: ''
+course: Documentary Tradition
 director: ''
 film_title: ''
 image_src: 110094025.jpg

@@ -1,7 +1,9 @@
 ---
+category: Women Film Pioneers
 collection: ''
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: Ray C. Smallwood
 film_title: Camille
 image_src: nazimova2.jpg

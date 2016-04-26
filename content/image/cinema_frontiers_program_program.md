@@ -1,7 +1,9 @@
 ---
+category: Avant-Garde Historiography
 collection: Amos Vogel Papers
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: ''
 image_src: 110094067.jpg

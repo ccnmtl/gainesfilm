@@ -1,7 +1,9 @@
 ---
+category: Avant-Garde Historiography
 collection: ''
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: King Vidor
 film_title: Hallelujah
 image_src: king_vidor_transcript1.jpg

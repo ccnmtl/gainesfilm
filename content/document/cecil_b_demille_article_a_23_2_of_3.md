@@ -1,7 +1,9 @@
 ---
+category: Women Film Pioneers
 collection: Cecil B. DeMille Collection
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: ''
 image_src: A_demille_a-23-2.jpg

@@ -1,7 +1,9 @@
 ---
+category: Motion Picture Set Design
 collection: Joseph Urban papers
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: Paul Wegener and Carl Boese
 film_title: The Golem
 image_src: 1000102066.jpg

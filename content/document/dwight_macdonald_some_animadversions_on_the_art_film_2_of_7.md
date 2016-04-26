@@ -1,7 +1,9 @@
 ---
+category: Avant-Garde Historiography
 collection: ''
 copyright: ''
 copyright_notes: ''
+course: Historiography
 director: ''
 film_title: ''
 image_src: Pages from macdonald_esquire2.jpg
