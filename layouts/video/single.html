@@ -2,6 +2,31 @@
 
 <h1>{{.Title}}</h1>
 
+<a class="btn btn-default" href="#details">Details</a>
+
+<hr />
+
+<div class="alert alert-danger" role="alert">Sorry, but media embeds are not ported yet. This is just a placeholder video.</div>
+
+<!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fuTzNT56a-s" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<!-- 4:3 aspect ratio -->
+<!--<div class="embed-responsive embed-responsive-4by3">-->
+<!--<iframe class="embed-responsive-item" src="..." frameborder="0" allowfullscreen></iframe>-->
+<!--</div>-->
+
+<hr />
+
+<a name="details"></a><h2>Details</h2>
+
+<dl>
+<dt>Title</dt>
+<dd>{{.Title}}</dd>
+</dl>
+
 <dl>
     {{ if .Params.categories }}
     <dt>Category {{ len .Params.categories }}</dt>
@@ -27,13 +52,16 @@
         <a href="/media/{{ . | urlize }}/">{{ . }}</a>
         {{ end }}
     </dd>
-</dl>
-
-<dl>
-    {{ if .Params.year }}
+    
+        {{ if .Params.year }}
     <dt>Year</dt>
     <dd>{{ .Params.year }}</dd>
     {{ end }}
+    
+</dl>
+
+<dl>
+
 
     {{ if .Params.collection }}
     <dt>Collection</dt>
@@ -81,7 +109,5 @@
     {{ end }}
 
 </dl>
-
-<p>Sorry, media embeds are not ported yet</p>
 
 {{ partial "footer.html" }}

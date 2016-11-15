@@ -2,9 +2,22 @@
 
 <h1>{{.Title}}</h1>
 
+<a class="btn btn-default" href="#details">Details</a>
+
+<hr />
+
 {{ if .Params.image_src }}
-<img src="/imgs/{{.Params.image_src}}" />
+<img class="img-responsive center-block" src="/imgs/{{.Params.image_src}}" />
 {{ end }}
+
+<hr />
+
+<a name="details"></a><h2>Details</h2>
+
+<dl>
+<dt>Title</dt>
+<dd>{{.Title}}</dd>
+</dl>
 
 <dl>
     {{ if .Params.categories }}
@@ -31,13 +44,15 @@
         <a href="/media/{{ . | urlize }}/">{{ . }}</a>
         {{ end }}
     </dd>
-</dl>
-
-<dl>
-    {{ if .Params.year }}
+    
+        {{ if .Params.year }}
     <dt>Year</dt>
     <dd>{{ .Params.year }}</dd>
     {{ end }}
+    
+</dl>
+
+<dl>
 
     {{ if .Params.collection }}
     <dt>Collection</dt>

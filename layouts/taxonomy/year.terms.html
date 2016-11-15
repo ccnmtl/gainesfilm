@@ -1,10 +1,20 @@
 {{ partial "header.html" }}
-<h1>{{ .Title }}</h1>
 
-{{ $data := .Data }}
-<ul>
-    {{ range $key, $value := .Data.Terms }}
-    <li><a href="/{{ $data.Plural }}/{{ $key | urlize }}/">{{ $key }}</a> {{ len $value }}</li>
-    {{ end }}
-</ul>
+<h1><span style="color: #999;">Full Collection / </span>Refine Collection by <!--{{ .Title }}--> Year</h1>
+
+<div class="row">
+  <div class="col-md-6">
+  
+    {{ $data := .Data }}
+    <ul class="list-group" id="list-group-year">
+        {{ range $key, $value := .Data.Terms }}
+        <li class="list-group-item"><a href="/{{ $data.Plural }}/{{ $key | urlize }}/">{{ $key }}</a> <span class="badge">{{ len $value }}</span></li>
+        {{ end }}
+    </ul>
+
+  </div>
+  <div class="col-md-6"></div>
+</div>
+
+
 {{ partial "footer.html" }}
