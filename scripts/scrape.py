@@ -3,7 +3,7 @@ from requests import Session
 import os
 import yaml
 from bs4 import BeautifulSoup
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs
 
 
 HOST = "gainesfilm.qa-lamp.ccnmtl.columbia.edu"
@@ -265,8 +265,27 @@ class Video(BaseType):
     def ntype(self):
         return "video"
 
+    def _embed_src(self):
+        base = "http://ccnmtl.columbia.edu/stream/jsembed?"
+        for s in self.soup('script'):
+            if 'src' not in s.attrs:
+                continue
+            src = s.attrs['src']
+            if src.startswith(base):
+                return src
+        return None
+
+    def flv(self):
+        src = self._embed_src()
+        o = urlparse(src)
+        fields = parse_qs(o.query)
+        f = fields.get('file', [""])
+        return f[0]
+
     def extra_fields(self):
-        return {}
+        return {
+            'flv': self.flv(),
+        }
 
 
 class Document(BaseType):
