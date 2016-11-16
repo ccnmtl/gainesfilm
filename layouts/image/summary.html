@@ -1,5 +1,5 @@
 <tr>
-    <td><a href="{{.RelPermalink}}">{{.Title}}</a></td>
+    <th><a href="{{.RelPermalink}}">{{.Title}}</a></th>
     <td>
         {{ range .Params.years }}
         <a href="/years/{{ . | urlize }}/">{{ . }}</a>

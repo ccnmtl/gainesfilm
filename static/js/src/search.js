@@ -25,10 +25,10 @@ var doSearch = function() {
     $el.show();
     $el.append('<div class="arrow"></div>');
     $el.append(
-       $('<h2>RESULTS FOR: "' + q + '"</h2>')
+       $('<div class="alert alert-info well">Results for <strong>"' + q + '"</strong></div>')
     );
     if (results.length === 0) {
-        $el.append('<div class="q-no-item">Unfortunately, there are ' +
+        $el.append('<div class="alert alert-danger q-no-item">Unfortunately, there are ' +
                    'no results matching what you\'re looking for.');
     } else {
         for (var r in results.slice(0, 10)) {
