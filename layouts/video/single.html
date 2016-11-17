@@ -6,6 +6,9 @@
 
 <hr />
 
+{{ if .Params.embed }}
+{{ .Params.embed | safeHTML }}
+{{ else }}
 <div class="alert alert-danger" role="alert">Sorry, but media embeds are not ported yet. This is just a placeholder video.</div>
 
 <!-- 16:9 aspect ratio -->
@@ -17,6 +20,7 @@
 <!--<div class="embed-responsive embed-responsive-4by3">-->
 <!--<iframe class="embed-responsive-item" src="..." frameborder="0" allowfullscreen></iframe>-->
 <!--</div>-->
+{{ end }}
 
 <hr />
 
