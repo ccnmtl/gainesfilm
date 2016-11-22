@@ -3,31 +3,31 @@
 {{ $videos := where .Site.Pages ".Type" "video" }}
 [{{ range $index, $page := $images }}{{ if $index }},{{ end }}
 {
-   "url": "{{$page.RelPermalink}}",
-   "title": "{{$page.Title}}",
-   "media": "{{$page.Type}}",
-   "year": "{{$page.Params.year}}",
-   "category": "{{range $page.Params.categories}}{{.}}{{end}}",
-   "course": "{{range $page.Params.courses}}{{.}}{{end}}"
+  "url": "{{$page.RelPermalink}}",
+  "title": "{{$page.Title}}",
+  "media": "{{$page.Type}}",
+  "year": "{{$page.Params.year}}",
+  "category": "{{range $page.Params.categories}}{{.}}{{end}}",
+  "course": "{{range $page.Params.courses}}{{.}}{{end}}"
 }{{ end }}
 
 {{ range $index, $page := $documents }},
 {
-"url": "{{$page.RelPermalink}}",
-"title": "{{$page.Title}}",
-"media": "{{$page.Type}}",
-"year": "{{$page.Params.year}}",
-"category": "{{range $page.Params.categories}}{{.}}{{end}}",
-"course": "{{range $page.Params.courses}}{{.}}{{end}}"
+  "url": "{{$page.RelPermalink}}",
+  "title": "{{$page.Title}}",
+  "media": "{{$page.Type}}",
+  "year": "{{$page.Params.year}}",
+  "category": "{{range $page.Params.categories}}{{.}}{{end}}",
+  "course": "{{range $page.Params.courses}}{{.}}{{end}}"
 }{{ end }}
 
 {{ range $index, $page := $videos }},
 {
-"url": "{{$page.RelPermalink}}",
-"title": "{{$page.Title}}",
-"media": "{{$page.Type}}",
-"year": "{{$page.Params.year}}",
-"category": "{{range $page.Params.categories}}{{.}}{{end}}",
-"course": "{{range $page.Params.courses}}{{.}}{{end}}"
+  "url": "{{$page.RelPermalink}}",
+  "title": "{{$page.Title}}",
+  "media": "{{$page.Type}}",
+  "year": "{{$page.Params.year}}",
+  "category": "{{range $page.Params.categories}}{{.}}{{end}}",
+  "course": "{{range $page.Params.courses}}{{.}}{{end}}"
 }{{ end }}
 ]
