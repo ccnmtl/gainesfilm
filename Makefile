@@ -12,4 +12,5 @@ include *.mk
 
 $(PUBLIC)/js/all.json: $(PUBLIC)/json/all/index.html
 	mkdir $(PUBLIC)/js/ || true
+	cp $< static/js/all.json
 	mv $< $@ && ./checkjson.py
