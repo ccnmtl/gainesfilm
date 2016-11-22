@@ -1,38 +1,25 @@
 {{ partial "header.html" }}
 
-<h1>Full Collection</h1>
+<h1>Home </h1>
 
-{{ $paginator := .Paginate .Data.Pages }}
+<p>Welcome to Professor Gaines' Film Studies Digital Library. Use the collection links below or in the upper right hand corner of the site to browse and view videos, images and documents to incorporate into your assignments. Use the bookmarklet to analyze the material and create projects in MediaThread.</p>
 
-<div class="table-responsive">
-<table class="table table-striped table-condensed">
-    <colgroup>
-        <col style="width: 55%;">
-        <col style="width: 5%;">
-        <col style="width: 20%;">
-        <col style="width: 10%;">
-        <col style="width: 10%;">
-    </colgroup>
+<p><a href="/library/">Browse the Collection</a></p>
 
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Year</th>
-            <th>Category</th>
-            <th>Course</th>
-            <th>Media</th>
-        </tr>
-    </thead>
-    <tbody>
-        {{ range $paginator.Pages }}
-        {{ .Render "summary" }}
-        {{ end }}
-    </tbody>
-</table>
-</div>
+<!--
 
-<div class="text-center">
-{{ template "_internal/pagination.html" . }}
-</div>
+     Marc,
+
+     This is basically the "login" page now.
+     At least, it's the page that people would see before they login.
+     We leave this open and put the rest of the site behind auth.
+
+     With a static site, we don't have any way of rendering this page differently
+     when the user is logged in or not, so that's a bit limiting. But then,
+     the old Drupal version didn't actually do that either even though
+     it potentially could've...
+
+
+-->
 
 {{ partial "footer.html" }}
