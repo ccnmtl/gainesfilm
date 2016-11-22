@@ -17,6 +17,16 @@ $.getJSON('/js/all.json').done(function(item) {
     console.error('Error getting Hugo index file:', err);
 });
 
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.replace(new RegExp(search, 'g'), replacement);
+};
+
+var unquote = function(s) {
+    s = s.replaceAll('&#34;', '\"');
+    return s;
+};
+
 var doSearch = function() {
     var q = $('#q').val();
     var results = index.search(q);
@@ -37,7 +47,7 @@ var doSearch = function() {
                 var $result = $('<div class="q-item">');
                 $result.append($('<a>', {
                     href: d.url,
-                    text: d.title
+                    text: unquote(d.title)
                 }));
                 $el.append($result);
             }
