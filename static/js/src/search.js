@@ -29,6 +29,27 @@ var unquote = function(s) {
     return s;
 };
 
+var thead = function() {
+    var $thead = $('<thead><tr>' +
+                   '<th>Title</th>' +
+                   '<th>Year</th>' +
+                   '<th>Category</th>' +
+                   '<th>Course</th>' +
+                   '<th>Media</th>' +
+                   '</tr></thead>');
+    return $thead;
+};
+
+var colgroup = function() {
+    return $('<colgroup>' +
+             '<col style="width: 55%;">' +
+             '<col style="width: 5%;">' +
+             '<col style="width: 20%;">' +
+             '<col style="width: 10%;">' +
+             '<col style="width: 10%;">' +
+             '</colgroup>');
+};
+
 var doSearch = function() {
     var q = $('#q').val();
     var results = index.search(q);
@@ -45,7 +66,9 @@ var doSearch = function() {
                    'Unfortunately, there are ' +
                    'no results matching what you\'re looking for.');
     } else {
-        var $table = $('<table class="table">');
+        var $table = $('<table class="table table-striped table-condensed">');
+        $table.append(colgroup());
+        $table.append(thead());
         for (var r in results.slice(0, MAX_RESULTS)) {
             if (results.hasOwnProperty(r)) {
                 var d = data[results[r].ref];
