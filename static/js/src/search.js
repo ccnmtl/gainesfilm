@@ -1,3 +1,5 @@
+var MAX_RESULTS = 10;
+
 var index = lunr(function() {
     this.field('url');
     this.field('title', {boost: 10});
@@ -43,17 +45,36 @@ var doSearch = function() {
                    'Unfortunately, there are ' +
                    'no results matching what you\'re looking for.');
     } else {
-        for (var r in results.slice(0, 10)) {
+        var $table = $('<table class="table">');
+        for (var r in results.slice(0, MAX_RESULTS)) {
             if (results.hasOwnProperty(r)) {
                 var d = data[results[r].ref];
+                var $tr = $('<tr>');
+                var $td = $('<td>');
                 var $result = $('<div class="q-item">');
                 $result.append($('<a>', {
                     href: d.url,
                     text: unquote(d.title)
                 }));
-                $el.append($result);
+                $td.append($result);
+                $tr.append($td);
+
+                var $year = $('<td>', {text: d.year});
+                $tr.append($year);
+
+                var $cat = $('<td>', {text: d.category});
+                $tr.append($cat);
+
+                var $course = $('<td>', {text: d.course});
+                $tr.append($course);
+
+                var $media = $('<td>', {text: d.media});
+                $tr.append($media);
+
+                $table.append($tr);
             }
         }
+        $el.append($table);
     }
     return false;
 };
