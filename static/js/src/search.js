@@ -1,3 +1,5 @@
+var MAX_RESULTS = 10;
+
 var index = lunr(function() {
     this.field('url');
     this.field('title', {boost: 10});
@@ -17,6 +19,37 @@ $.getJSON('/js/all.json').done(function(item) {
     console.error('Error getting Hugo index file:', err);
 });
 
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.replace(new RegExp(search, 'g'), replacement);
+};
+
+var unquote = function(s) {
+    s = s.replaceAll('&#34;', '\"');
+    return s;
+};
+
+var thead = function() {
+    var $thead = $('<thead><tr>' +
+                   '<th>Title</th>' +
+                   '<th>Year</th>' +
+                   '<th>Category</th>' +
+                   '<th>Course</th>' +
+                   '<th>Media</th>' +
+                   '</tr></thead>');
+    return $thead;
+};
+
+var colgroup = function() {
+    return $('<colgroup>' +
+             '<col style="width: 55%;">' +
+             '<col style="width: 5%;">' +
+             '<col style="width: 20%;">' +
+             '<col style="width: 10%;">' +
+             '<col style="width: 10%;">' +
+             '</colgroup>');
+};
+
 var doSearch = function() {
     var q = $('#q').val();
     var results = index.search(q);
@@ -25,23 +58,46 @@ var doSearch = function() {
     $el.show();
     $el.append('<div class="arrow"></div>');
     $el.append(
-       $('<div class="alert alert-info well">Results for <strong>"' + q + '"</strong></div>')
+        $('<div class="alert alert-info well">Results for <strong>"' +
+          q + '"</strong></div>')
     );
     if (results.length === 0) {
-        $el.append('<div class="alert alert-danger q-no-item">Unfortunately, there are ' +
+        $el.append('<div class="alert alert-danger q-no-item">' +
+                   'Unfortunately, there are ' +
                    'no results matching what you\'re looking for.');
     } else {
-        for (var r in results.slice(0, 10)) {
+        var $table = $('<table class="table table-striped table-condensed">');
+        $table.append(colgroup());
+        $table.append(thead());
+        for (var r in results.slice(0, MAX_RESULTS)) {
             if (results.hasOwnProperty(r)) {
                 var d = data[results[r].ref];
+                var $tr = $('<tr>');
+                var $td = $('<td>');
                 var $result = $('<div class="q-item">');
                 $result.append($('<a>', {
                     href: d.url,
-                    text: d.title
+                    text: unquote(d.title)
                 }));
-                $el.append($result);
+                $td.append($result);
+                $tr.append($td);
+
+                var $year = $('<td>', {text: d.year});
+                $tr.append($year);
+
+                var $cat = $('<td>', {text: d.category});
+                $tr.append($cat);
+
+                var $course = $('<td>', {text: d.course});
+                $tr.append($course);
+
+                var $media = $('<td>', {text: d.media});
+                $tr.append($media);
+
+                $table.append($tr);
             }
         }
+        $el.append($table);
     }
     return false;
 };
