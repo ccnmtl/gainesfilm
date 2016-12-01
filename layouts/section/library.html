@@ -2,6 +2,8 @@
 
 <h1>Full Collection</h1>
 
+{{ partial "filter.html" }}
+
 {{ $paginator := .Paginate $.Site.Pages }}
 
 <div class="table-responsive">
