@@ -42,6 +42,11 @@ $.getJSON('/js/all.json').done(function(item) {
     console.error('Error getting Hugo index file:', err);
 });
 
+var allResults = function() {
+    var keys = Object.keys(data);
+    return keys.map(function(v) { return data[v]; });
+};
+
 String.prototype.replaceAll = function(search, replacement) {
     var target = this;
     return target.replace(new RegExp(search, 'g'), replacement);
@@ -118,16 +123,16 @@ var resolveResults = function(ids) {
 
 var doFilter = function() {
     var q = $('#filter-q').val();
-    var results = index.search(q);
+    var results;
+    if (q !== '') {
+        results = resolveResults(index.search(q));
+    } else {
+        results = allResults();
+    }
     var $el = $('#filter-results');
     $el.empty();
     $el.show();
     $el.append('<div class="arrow"></div>');
-    $el.append(
-        $('<div class="alert alert-info well">Results for <strong>"' +
-          q + '"</strong></div>')
-    );
-    results = resolveResults(results);
     results = filterResults(results);
     if (results.length === 0) {
         $el.append('<div class="alert alert-danger q-no-item">' +
