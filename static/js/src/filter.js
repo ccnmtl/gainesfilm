@@ -79,16 +79,13 @@ var filterResults = function(results) {
     var media = $('#filter-media').val();
 
     var filterCategory = function(element) {
-        var d = data[element.ref];
-        return d.category === category;
+        return element.category === category;
     };
     var filterCourse = function(element) {
-        var d = data[element.ref];
-        return d.course === course;
+        return element.course === course;
     };
     var filterMedia = function(element) {
-        var d = data[element.ref];
-        return d.media === media;
+        return element.media === media;
     };
 
     if (category !== '') {
@@ -106,6 +103,19 @@ var filterResults = function(results) {
     return results;
 };
 
+// lunr.js returns a list of ids
+// resolve them into a list of proper objects
+var resolveResults = function(ids) {
+    var results = [];
+    for (var r in ids) {
+        if (ids.hasOwnProperty(r)) {
+            var d = data[ids[r].ref];
+            results.push(d);
+        }
+    }
+    return results;
+};
+
 var doFilter = function() {
     var q = $('#filter-q').val();
     var results = index.search(q);
@@ -117,6 +127,7 @@ var doFilter = function() {
         $('<div class="alert alert-info well">Results for <strong>"' +
           q + '"</strong></div>')
     );
+    results = resolveResults(results);
     results = filterResults(results);
     if (results.length === 0) {
         $el.append('<div class="alert alert-danger q-no-item">' +
@@ -127,32 +138,30 @@ var doFilter = function() {
         $table.append(colgroup());
         $table.append(thead());
         for (var r in results.slice(0, MAX_RESULTS)) {
-            if (results.hasOwnProperty(r)) {
-                var d = data[results[r].ref];
-                var $tr = $('<tr>');
-                var $td = $('<td>');
-                var $result = $('<div class="q-item">');
-                $result.append($('<a>', {
-                    href: d.url,
-                    text: unquote(d.title)
-                }));
-                $td.append($result);
-                $tr.append($td);
+            var d = results[r];
+            var $tr = $('<tr>');
+            var $td = $('<td>');
+            var $result = $('<div class="q-item">');
+            $result.append($('<a>', {
+                href: d.url,
+                text: unquote(d.title)
+            }));
+            $td.append($result);
+            $tr.append($td);
 
-                var $year = $('<td>', {text: d.year});
-                $tr.append($year);
+            var $year = $('<td>', {text: d.year});
+            $tr.append($year);
 
-                var $cat = $('<td>', {text: d.category});
-                $tr.append($cat);
+            var $cat = $('<td>', {text: d.category});
+            $tr.append($cat);
 
-                var $course = $('<td>', {text: d.course});
-                $tr.append($course);
+            var $course = $('<td>', {text: d.course});
+            $tr.append($course);
 
-                var $media = $('<td>', {text: d.media});
-                $tr.append($media);
+            var $media = $('<td>', {text: d.media});
+            $tr.append($media);
 
-                $table.append($tr);
-            }
+            $table.append($tr);
         }
         $el.append($table);
     }
