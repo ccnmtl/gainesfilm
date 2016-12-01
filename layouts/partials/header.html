@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title> {{ .Title }} | The Film Studies Digital Library</title>
+    <title> {{ .Title }} | The Film and Media Studies Digital Library</title>
     
     <link rel="canonical" href="{{ .Permalink }}">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
@@ -20,6 +20,12 @@
     /*missing year fix*/
     ul#list-group-year .list-group-item:nth-child(1) {display: none;}
     
+    /*dynamic search table fix*/
+    #search-results table {border: 1px solid #e3e3e3!important; margin-top: -22px!important; margin-bottom:80px!important;}
+
+     .jumbotron {background-color: #000;}   
+     .jumbotron h1, .jumbotron p {color: #fff;}  
+     .jumbotron {background-image: url("/imgs/jumbotron.png");}
     </style>
 
 </head>
@@ -38,14 +44,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><strong>The Film Studies Digital Library</strong></a>
+            <a class="navbar-brand" href="/">The Film and Media Studies Digital Library</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
     
             <form class="navbar-form navbar-left" role="search">
-                <input id="q" type="text" required="" class="form-control search-box" placeholder="I'm looking for..." />
+                <input style="width: 130px;" id="q" type="text" required="" class="form-control search-box" placeholder="I'm looking for..." />
             </form>
       
             <ul class="nav navbar-nav">
@@ -66,7 +72,6 @@
     </div><!-- /.container-->
 
 </nav>
-
 
 <div class="container">
 
