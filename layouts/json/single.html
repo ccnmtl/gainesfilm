@@ -8,6 +8,8 @@
   "media": "{{$page.Type}}",
   "year": "{{$page.Params.year}}",
   "category": "{{range $page.Params.categories}}{{.}}{{end}}",
+  "category_link": "{{range $page.Params.categories}}/categories/{{. | urlize}}/{{end}}",
+  "course_link": "{{range $page.Params.courses}}/courses/{{. | urlize}}/{{end}}",
   "course": "{{range $page.Params.courses}}{{.}}{{end}}"
 }{{ end }}
 
@@ -18,6 +20,8 @@
   "media": "{{$page.Type}}",
   "year": "{{$page.Params.year}}",
   "category": "{{range $page.Params.categories}}{{.}}{{end}}",
+  "category_link": "{{range $page.Params.categories}}{{. | urlize}}{{end}}",
+  "course_link": "{{range $page.Params.courses}}/courses/{{. | urlize}}/{{end}}",
   "course": "{{range $page.Params.courses}}{{.}}{{end}}"
 }{{ end }}
 
@@ -28,6 +32,8 @@
   "media": "{{$page.Type}}",
   "year": "{{$page.Params.year}}",
   "category": "{{range $page.Params.categories}}{{.}}{{end}}",
+  "category_link": "{{range $page.Params.categories}}{{. | urlize}}{{end}}",
+  "course_link": "{{range $page.Params.courses}}/courses/{{. | urlize}}/{{end}}",
   "course": "{{range $page.Params.courses}}{{.}}{{end}}"
 }{{ end }}
 ]
