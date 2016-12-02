@@ -3,32 +3,32 @@
 <h1>Full Collection</h1>
 
 {{ partial "filter.html" }}
+<div id="filter-results">
+    <div class="table-responsive">
+        <table class="table table-striped table-condensed">
+            <colgroup>
+                <col style="width: 55%;">
+                <col style="width: 5%;">
+                <col style="width: 20%;">
+                <col style="width: 10%;">
+                <col style="width: 10%;">
+            </colgroup>
 
-<div class="table-responsive">
-<table class="table table-striped table-condensed">
-    <colgroup>
-        <col style="width: 55%;">
-        <col style="width: 5%;">
-        <col style="width: 20%;">
-        <col style="width: 10%;">
-        <col style="width: 10%;">
-    </colgroup>
-
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Year</th>
-            <th>Category</th>
-            <th>Course</th>
-            <th>Media</th>
-        </tr>
-    </thead>
-    <tbody>
-        {{ range $.Site.Pages }}
-        {{ .Render "summary" }}
-        {{ end }}
-    </tbody>
-</table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>Category</th>
+                    <th>Course</th>
+                    <th>Media</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ range $.Site.Pages }}
+                {{ .Render "summary" }}
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
 </div>
-
 {{ partial "footer.html" }}
