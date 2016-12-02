@@ -131,8 +131,10 @@ var titleTH = function(d) {
 };
 
 var yearTD = function(d) {
-    var $year = $('<td>', {text: d.year});
-    return $year;
+    var $td = $('<td>');
+    var $year = $('<a>', {href: '/year/' + d.year + '/', text: d.year});
+    $td.append($year);
+    return $td;
 };
 
 var categoryTD = function(d) {
@@ -146,8 +148,10 @@ var courseTD = function(d) {
 };
 
 var mediaTD = function(d) {
-    var $media = $('<td>', {text: d.media});
-    return $media;
+    var $td = $('<td>');
+    var $media = $('<a>', {href: '/media/' + d.media + '/', text: d.media});
+    $td.append($media);
+    return $td;
 };
 
 var doFilter = function() {
