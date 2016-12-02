@@ -52,6 +52,7 @@ String.prototype.replaceAll = function(search, replacement) {
 
 var unquote = function(s) {
     s = s.replaceAll('&#34;', '\"');
+    s = s.replaceAll('&#39;', '\"');
     return s;
 };
 
