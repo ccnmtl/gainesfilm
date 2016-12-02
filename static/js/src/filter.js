@@ -119,15 +119,15 @@ var resolveResults = function(ids) {
     return results;
 };
 
-var titleTD = function(d) {
-    var $td = $('<td>');
+var titleTH = function(d) {
+    var $th = $('<th>');
     var $result = $('<div class="q-item">');
     $result.append($('<a>', {
         href: d.url,
         text: unquote(d.title)
     }));
-    $td.append($result);
-    return $td;
+    $th.append($result);
+    return $th;
 };
 
 var yearTD = function(d) {
@@ -174,7 +174,7 @@ var doFilter = function() {
         for (var r in results) {
             var d = results[r];
             var $tr = $('<tr>');
-            $tr.append(titleTD(d));
+            $tr.append(titleTH(d));
             $tr.append(yearTD(d));
             $tr.append(categoryTD(d));
             $tr.append(courseTD(d));
