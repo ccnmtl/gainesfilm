@@ -119,6 +119,37 @@ var resolveResults = function(ids) {
     return results;
 };
 
+var titleTD = function(d) {
+    var $td = $('<td>');
+    var $result = $('<div class="q-item">');
+    $result.append($('<a>', {
+        href: d.url,
+        text: unquote(d.title)
+    }));
+    $td.append($result);
+    return $td;
+};
+
+var yearTD = function(d) {
+    var $year = $('<td>', {text: d.year});
+    return $year;
+};
+
+var categoryTD = function(d) {
+    var $cat = $('<td>', {text: d.category});
+    return $cat;
+};
+
+var courseTD = function(d) {
+    var $course = $('<td>', {text: d.course});
+    return $course;
+};
+
+var mediaTD = function(d) {
+    var $media = $('<td>', {text: d.media});
+    return $media;
+};
+
 var doFilter = function() {
     var q = $('#filter-q').val();
     var results;
@@ -143,27 +174,11 @@ var doFilter = function() {
         for (var r in results) {
             var d = results[r];
             var $tr = $('<tr>');
-            var $td = $('<td>');
-            var $result = $('<div class="q-item">');
-            $result.append($('<a>', {
-                href: d.url,
-                text: unquote(d.title)
-            }));
-            $td.append($result);
-            $tr.append($td);
-
-            var $year = $('<td>', {text: d.year});
-            $tr.append($year);
-
-            var $cat = $('<td>', {text: d.category});
-            $tr.append($cat);
-
-            var $course = $('<td>', {text: d.course});
-            $tr.append($course);
-
-            var $media = $('<td>', {text: d.media});
-            $tr.append($media);
-
+            $tr.append(titleTD(d));
+            $tr.append(yearTD(d));
+            $tr.append(categoryTD(d));
+            $tr.append(courseTD(d));
+            $tr.append(mediaTD(d));
             $table.append($tr);
         }
         $el.append($table);
