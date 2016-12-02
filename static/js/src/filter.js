@@ -1,5 +1,3 @@
-var MAX_RESULTS = 10;
-
 var index = lunr(function() {
     this.field('url');
     this.field('title', {boost: 10});
@@ -142,7 +140,7 @@ var doFilter = function() {
         var $table = $('<table class="table table-striped table-condensed">');
         $table.append(colgroup());
         $table.append(thead());
-        for (var r in results.slice(0, MAX_RESULTS)) {
+        for (var r in results) {
             var d = results[r];
             var $tr = $('<tr>');
             var $td = $('<td>');
