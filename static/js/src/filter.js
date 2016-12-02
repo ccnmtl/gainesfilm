@@ -139,13 +139,19 @@ var yearTD = function(d) {
 };
 
 var categoryTD = function(d) {
-    var $cat = $('<td>', {text: d.category});
-    return $cat;
+    var $td = $('<td>');
+    var attr = 'category_link';
+    var $cat = $('<a>', {href: d[attr], text: d.category});
+    $td.append($cat);
+    return $td;
 };
 
 var courseTD = function(d) {
-    var $course = $('<td>', {text: d.course});
-    return $course;
+    var $td = $('<td>');
+    var attr = 'course_link';
+    var $course = $('<a>', {href: d[attr], text: d.course});
+    $td.append($course);
+    return $td;
 };
 
 var mediaTD = function(d) {
