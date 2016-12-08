@@ -1,23 +1,26 @@
 <script src="/js/lib/underscore.min.js"></script>
 <script src="/js/src/filter.js"></script>
 
-<div id="filter">
+<div class="well" id="filter">
+
     <form class="form form-inline">
 
-        <input type="text" name="filter-q" id="filter-q" placeholder="search" class="form-control"/>
+        <input type="text" name="filter-q" id="filter-q" placeholder="I'm looking for..." class="form-control"/>
         
         <select name="category" class="form-control" id="filter-category">
-            <option value="" selected="selected">Category: &lt;All&gt;</option>
+            <option value="" selected="selected">All Categories</option>
         </select>
 
         <select name="course" class="form-control" id="filter-course">
-            <option value="" selected="selected">Course: &lt;All&gt;</option>            
+            <option value="" selected="selected">All Courses</option>            
         </select>
 
         <select name="media" class="form-control" id="filter-media">
-            <option value="" selected="selected">Media: &lt;All&gt;</option>
+            <option value="" selected="selected">All Media</option>
         </select>
-
+        
+    </form>
+    
 </div>
 
 <script id="filter-results-template" type="text/template">
