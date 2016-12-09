@@ -20,13 +20,13 @@
 
 </div>
 
-<script id="no-results-template" type="text/template">
+<script id="filter-results-template" type="text/template">
+    <div class="arrow"></div>
+    <% if (results.length === 0) { %>
     <div class="alert alert-danger q-no-item">
         Unfortunately, there are no results matching what you're looking for.
     </div>
-</script>
-
-<script id="filter-results-template" type="text/template">
+    <% } else { %>
     <table class="table table-striped table-condensed">
         <colgroup>
             <col style="width: 55%;">
@@ -67,4 +67,5 @@
 
         </tbody>
     </table>
+    <% } %>
 </script>

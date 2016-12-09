@@ -112,20 +112,13 @@ var doFilter = function() {
     } else {
         results = allResults();
     }
+    results = filterResults(results);
+    results = results.map(insertUnquote);
     var $el = $('#filter-results');
     $el.empty();
     $el.show();
-    $el.append('<div class="arrow"></div>');
-    results = filterResults(results);
-    results = results.map(insertUnquote);
-    if (results.length === 0) {
-        var template = _.template($('#no-results-template').html());
-        var html = template({'q': q});
-        $el.append(html);
-    } else {
-        var template = _.template($('#filter-results-template').html());
-        $el.append(template({'results': results}));
-    }
+    var template = _.template($('#filter-results-template').html());
+    $el.append(template({'results': results, 'q': q}));
     return false;
 };
 
