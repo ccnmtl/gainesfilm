@@ -175,9 +175,9 @@ var doFilter = function() {
     $el.append('<div class="arrow"></div>');
     results = filterResults(results);
     if (results.length === 0) {
-        $el.append('<div class="alert alert-danger q-no-item">' +
-                   'Unfortunately, there are ' +
-                   'no results matching what you\'re looking for.');
+        var template = _.template($('#no-results-template').html());
+        var html = template({'q': q});
+        $el.append(html);
     } else {
         var $table = $('<table class="table table-striped table-condensed">');
         $table.append(colgroup());
