@@ -26,20 +26,45 @@
     </div>
 </script>
 
-<script id="result-row-template" type="text/template">
-    <tr>
-        <th><a href="<%= url %>"><%= unquotedTitle %></a></th>
-        <td>
-            <a href="/years/<%= year %>/"><%= year %></a>
-        </td>
-        <td>
-            <a href="<%= category_link %>"><%= category %></a>
-        </td>
-        <td>
-            <a href="<%= course_link %>"><%= course %></a>
-        </td>
-        <td>
-            <a href="/media/<%= media %>/"><%= media %></a>
-        </td>
-    </tr>
+<script id="filter-results-template" type="text/template">
+    <table class="table table-striped table-condensed">
+        <colgroup>
+            <col style="width: 55%;">
+            <col style="width: 5%;">
+            <col style="width: 20%;">
+            <col style="width: 10%;">
+            <col style="width: 10%;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Category</th>
+                <th>Course</th>
+                <th>Media</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% _.each(results, function(result){ %>
+            <tr>
+                <th><a href="<%= result.url %>"><%= result.unquotedTitle %></a></th>
+                <td>
+                    <a href="/years/<%= result.year %>/"><%= result.year %></a>
+                </td>
+                <td>
+                    <a href="<%= result.category_link %>"><%= result.category %></a>
+                </td>
+                <td>
+                    <a href="<%= result.course_link %>"><%= result.course %></a>
+                </td>
+                <td>
+                    <a href="/media/<%= result.media %>/"><%= result.media %></a>
+                </td>
+            </tr>
+
+        <% }); %>
+
+        </tbody>
+    </table>
 </script>

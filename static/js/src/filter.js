@@ -56,27 +56,6 @@ var unquote = function(s) {
     return s;
 };
 
-var thead = function() {
-    var $thead = $('<thead><tr>' +
-                   '<th>Title</th>' +
-                   '<th>Year</th>' +
-                   '<th>Category</th>' +
-                   '<th>Course</th>' +
-                   '<th>Media</th>' +
-                   '</tr></thead>');
-    return $thead;
-};
-
-var colgroup = function() {
-    return $('<colgroup>' +
-             '<col style="width: 55%;">' +
-             '<col style="width: 5%;">' +
-             '<col style="width: 20%;">' +
-             '<col style="width: 10%;">' +
-             '<col style="width: 10%;">' +
-             '</colgroup>');
-};
-
 var filterResults = function(results) {
     var category = $('#filter-category').val();
     var course = $('#filter-course').val();
@@ -120,6 +99,11 @@ var resolveResults = function(ids) {
     return results;
 };
 
+var insertUnquote = function(v) {
+    v.unquotedTitle = unquote(v.title);
+    return v;
+};
+
 var doFilter = function() {
     var q = $('#filter-q').val();
     var results;
@@ -133,21 +117,14 @@ var doFilter = function() {
     $el.show();
     $el.append('<div class="arrow"></div>');
     results = filterResults(results);
+    results = results.map(insertUnquote);
     if (results.length === 0) {
         var template = _.template($('#no-results-template').html());
         var html = template({'q': q});
         $el.append(html);
     } else {
-        var $table = $('<table class="table table-striped table-condensed">');
-        $table.append(colgroup());
-        $table.append(thead());
-        for (var r in results) {
-            var d = results[r];
-            d.unquotedTitle = unquote(d.title);
-            var row_template = _.template($('#result-row-template').html());
-            $table.append(row_template(d));
-        }
-        $el.append($table);
+        var template = _.template($('#filter-results-template').html());
+        $el.append(template({'results': results}));
     }
     return false;
 };
