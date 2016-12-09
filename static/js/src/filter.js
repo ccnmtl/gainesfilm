@@ -120,47 +120,6 @@ var resolveResults = function(ids) {
     return results;
 };
 
-var titleTH = function(d) {
-    var $th = $('<th>');
-    var $result = $('<div class="q-item">');
-    $result.append($('<a>', {
-        href: d.url,
-        text: unquote(d.title)
-    }));
-    $th.append($result);
-    return $th;
-};
-
-var yearTD = function(d) {
-    var $td = $('<td>');
-    var $year = $('<a>', {href: '/year/' + d.year + '/', text: d.year});
-    $td.append($year);
-    return $td;
-};
-
-var categoryTD = function(d) {
-    var $td = $('<td>');
-    var attr = 'category_link';
-    var $cat = $('<a>', {href: d[attr], text: d.category});
-    $td.append($cat);
-    return $td;
-};
-
-var courseTD = function(d) {
-    var $td = $('<td>');
-    var attr = 'course_link';
-    var $course = $('<a>', {href: d[attr], text: d.course});
-    $td.append($course);
-    return $td;
-};
-
-var mediaTD = function(d) {
-    var $td = $('<td>');
-    var $media = $('<a>', {href: '/media/' + d.media + '/', text: d.media});
-    $td.append($media);
-    return $td;
-};
-
 var doFilter = function() {
     var q = $('#filter-q').val();
     var results;
@@ -184,13 +143,9 @@ var doFilter = function() {
         $table.append(thead());
         for (var r in results) {
             var d = results[r];
-            var $tr = $('<tr>');
-            $tr.append(titleTH(d));
-            $tr.append(yearTD(d));
-            $tr.append(categoryTD(d));
-            $tr.append(courseTD(d));
-            $tr.append(mediaTD(d));
-            $table.append($tr);
+            d.unquotedTitle = unquote(d.title);
+            var row_template = _.template($('#result-row-template').html());
+            $table.append(row_template(d));
         }
         $el.append($table);
     }

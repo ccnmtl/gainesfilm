@@ -25,3 +25,21 @@
         Unfortunately, there are no results matching what you're looking for.
     </div>
 </script>
+
+<script id="result-row-template" type="text/template">
+    <tr>
+        <th><a href="<%= url %>"><%= unquotedTitle %></a></th>
+        <td>
+            <a href="/years/<%= year %>/"><%= year %></a>
+        </td>
+        <td>
+            <a href="<%= category_link %>"><%= category %></a>
+        </td>
+        <td>
+            <a href="<%= course_link %>"><%= course %></a>
+        </td>
+        <td>
+            <a href="/media/<%= media %>/"><%= media %></a>
+        </td>
+    </tr>
+</script>
