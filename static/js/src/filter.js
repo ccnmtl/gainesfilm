@@ -56,27 +56,6 @@ var unquote = function(s) {
     return s;
 };
 
-var thead = function() {
-    var $thead = $('<thead><tr>' +
-                   '<th>Title</th>' +
-                   '<th>Year</th>' +
-                   '<th>Category</th>' +
-                   '<th>Course</th>' +
-                   '<th>Media</th>' +
-                   '</tr></thead>');
-    return $thead;
-};
-
-var colgroup = function() {
-    return $('<colgroup>' +
-             '<col style="width: 55%;">' +
-             '<col style="width: 5%;">' +
-             '<col style="width: 20%;">' +
-             '<col style="width: 10%;">' +
-             '<col style="width: 10%;">' +
-             '</colgroup>');
-};
-
 var filterResults = function(results) {
     var category = $('#filter-category').val();
     var course = $('#filter-course').val();
@@ -120,45 +99,9 @@ var resolveResults = function(ids) {
     return results;
 };
 
-var titleTH = function(d) {
-    var $th = $('<th>');
-    var $result = $('<div class="q-item">');
-    $result.append($('<a>', {
-        href: d.url,
-        text: unquote(d.title)
-    }));
-    $th.append($result);
-    return $th;
-};
-
-var yearTD = function(d) {
-    var $td = $('<td>');
-    var $year = $('<a>', {href: '/year/' + d.year + '/', text: d.year});
-    $td.append($year);
-    return $td;
-};
-
-var categoryTD = function(d) {
-    var $td = $('<td>');
-    var attr = 'category_link';
-    var $cat = $('<a>', {href: d[attr], text: d.category});
-    $td.append($cat);
-    return $td;
-};
-
-var courseTD = function(d) {
-    var $td = $('<td>');
-    var attr = 'course_link';
-    var $course = $('<a>', {href: d[attr], text: d.course});
-    $td.append($course);
-    return $td;
-};
-
-var mediaTD = function(d) {
-    var $td = $('<td>');
-    var $media = $('<a>', {href: '/media/' + d.media + '/', text: d.media});
-    $td.append($media);
-    return $td;
+var insertUnquote = function(v) {
+    v.unquotedTitle = unquote(v.title);
+    return v;
 };
 
 var doFilter = function() {
@@ -169,31 +112,13 @@ var doFilter = function() {
     } else {
         results = allResults();
     }
+    results = filterResults(results);
+    results = results.map(insertUnquote);
     var $el = $('#filter-results');
     $el.empty();
     $el.show();
-    $el.append('<div class="arrow"></div>');
-    results = filterResults(results);
-    if (results.length === 0) {
-        $el.append('<div class="alert alert-danger q-no-item">' +
-                   'Unfortunately, there are ' +
-                   'no results matching what you\'re looking for.');
-    } else {
-        var $table = $('<table class="table table-striped table-condensed">');
-        $table.append(colgroup());
-        $table.append(thead());
-        for (var r in results) {
-            var d = results[r];
-            var $tr = $('<tr>');
-            $tr.append(titleTH(d));
-            $tr.append(yearTD(d));
-            $tr.append(categoryTD(d));
-            $tr.append(courseTD(d));
-            $tr.append(mediaTD(d));
-            $table.append($tr);
-        }
-        $el.append($table);
-    }
+    var template = _.template($('#filter-results-template').html());
+    $el.append(template({'results': results, 'q': q}));
     return false;
 };
 
