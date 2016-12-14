@@ -4,6 +4,16 @@ var index = lunr(function() {
     this.field('year');
     this.field('category');
     this.field('course');
+    this.field('copyright');
+    this.field('copyright_notes');
+    this.field('director');
+    this.field('film_title');
+    this.field('image_src');
+    this.field('image_url');
+    this.field('location');
+    this.field('notes');
+    this.field('physical_description');
+    this.field('repository');
 });
 
 var filterBy = {'category': {}, 'course': {}, 'media': {}};
