@@ -2,4 +2,4 @@
 title: "Help"
 ---
 
-This is the help page. content can go here.
+Email [the CTL](mailto:columbiactl@columbia.edu) with questions, comments, and/or for help.
