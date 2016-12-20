@@ -114,6 +114,16 @@ var insertUnquote = function(v) {
     return v;
 };
 
+var compareTitles = function(a, b) {
+    if (a.title > b.title) {
+        return 1;
+    }
+    if (a.title < b.title) {
+        return -1;
+    }
+    return 0;
+};
+
 var doFilter = function() {
     var q = $('#filter-q').val();
     var results;
@@ -124,6 +134,7 @@ var doFilter = function() {
     }
     results = filterResults(results);
     results = results.map(insertUnquote);
+    results.sort(compareTitles);
     var $el = $('#filter-results');
     $el.empty();
     $el.show();
