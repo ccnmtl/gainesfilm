@@ -152,6 +152,9 @@ $(document).ready(function() {
     $('#filter-q').focus();
     $('#filter').click(doFilter);
     $('#clear-filter').click(clearFilter);
+    if ($('#filter-q').val() !== '') {
+        doFilter();
+    }
     $('#filter-q').keyup(function() {
         $('#filter-results').empty();
         if ($(this).val().length < 2) {
