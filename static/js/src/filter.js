@@ -149,6 +149,7 @@ var clearFilter = function() {
 };
 
 $(document).ready(function() {
+    $('#filter-q').focus();
     $('#filter').click(doFilter);
     $('#clear-filter').click(clearFilter);
     $('#filter-q').keyup(function() {
