@@ -127,7 +127,7 @@ var compareTitles = function(a, b) {
 var doFilter = function() {
     var q = $('#filter-q').val();
     var results;
-    if (q !== '') {
+    if (q.length > 2) {
         results = resolveResults(index.search(q));
     } else {
         results = allResults();
@@ -157,10 +157,7 @@ $(document).ready(function() {
     }
     $('#filter-q').keyup(function() {
         $('#filter-results').empty();
-        if ($(this).val().length < 2) {
-            $('#filter-results').hide();
-            return;
-        }
+        $('#filter-results').hide();
         return doFilter();
     });
     $('#filter-category').change(function() {
