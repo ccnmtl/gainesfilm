@@ -17,6 +17,7 @@
   "notes": "{{$page.Params.notes | replaceRE "[\n\r]+" " "}}",
   "physical_description": "{{$page.Params.physical_description}}",
   "repository": "{{$page.Params.repository}}",
+  "collection": "{{$page.Params.collection}}",
   "category": "{{range $page.Params.categories}}{{.}}{{end}}",
   "category_link": "{{range $page.Params.categories}}/categories/{{. | urlize}}/{{end}}",
   "course_link": "{{range $page.Params.courses}}/courses/{{. | urlize}}/{{end}}",
@@ -40,6 +41,7 @@
   "physical_description": "{{$page.Params.physical_description}}",
   "repository": "{{$page.Params.repository}}",
   "category": "{{range $page.Params.categories}}{{.}}{{end}}",
+  "collection": "{{$page.Params.collection}}",
   "category_link": "{{range $page.Params.categories}}{{. | urlize}}{{end}}",
   "course_link": "{{range $page.Params.courses}}/courses/{{. | urlize}}/{{end}}",
   "course": "{{range $page.Params.courses}}{{.}}{{end}}"
@@ -62,6 +64,7 @@
   "physical_description": "{{$page.Params.physical_description}}",
   "repository": "{{$page.Params.repository}}",
   "category": "{{range $page.Params.categories}}{{.}}{{end}}",
+  "collection": "{{$page.Params.collection}}",
   "category_link": "{{range $page.Params.categories}}{{. | urlize}}{{end}}",
   "course_link": "{{range $page.Params.courses}}/courses/{{. | urlize}}/{{end}}",
   "course": "{{range $page.Params.courses}}{{.}}{{end}}"

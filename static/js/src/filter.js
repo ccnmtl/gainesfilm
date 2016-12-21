@@ -14,6 +14,7 @@ var index = lunr(function() {
     this.field('notes');
     this.field('physical_description');
     this.field('repository');
+    this.field('collection');
 });
 
 var filterBy = {'category': {}, 'course': {}, 'media': {}};
