@@ -24,4 +24,9 @@ deploy-prod:
 	&& $(INTERMEDIATE_STEPS) \
 	&& $(S3CMD) $(S3_FLAGS) sync $(PUBLIC)/* s3://$(PROD_BUCKET)/
 
-.PHONY: runserver deploy-stage deploy-prod
+hugo-build:
+	rm -rf $(PUBLIC)
+	$(HUGO) $(PROD_FLAGS) -b '$(PROD_URL)'  --pluralizeListTitles=false \
+	&& $(INTERMEDIATE_STEPS)
+
+.PHONY: runserver deploy-stage deploy-prod build

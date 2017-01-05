@@ -3,6 +3,7 @@ PROD_URL=https://gainesfilm.ccnmtl.columbia.edu/
 STAGING_BUCKET=gainesfilm.stage.ccnmtl.columbia.edu
 PROD_BUCKET=gainesfilm.ccnmtl.columbia.edu
 INTERMEDIATE_STEPS ?= make $(PUBLIC)/js/all.json
+APP=gainesfilm
 
 JS_FILES=static/js/src
 
