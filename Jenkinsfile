@@ -14,6 +14,7 @@ env.TAG = TAG
 env.APP = APP
 env.REPO = REPO
 env.ADMIN_EMAIL = ADMIN_EMAIL
+env.HUGO = "/usr/local/bin/hugo-0.17"
 
 def hosts = HOSTS.split(" ")
 
