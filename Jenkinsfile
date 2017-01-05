@@ -14,7 +14,6 @@ env.TAG = TAG
 env.APP = APP
 env.REPO = REPO
 env.ADMIN_EMAIL = ADMIN_EMAIL
-env.HUGO = "/usr/local/bin/hugo-0.17"
 
 def hosts = HOSTS.split(" ")
 
@@ -40,6 +39,8 @@ try {
 } catch (mediacheckVerifyError) {
 }
 
+env.HUGO = "/usr/local/bin/hugo-0.17"
+
 def err = null
 currentBuild.result = "SUCCESS"
 
@@ -48,8 +49,10 @@ try {
         stage 'Checkout'
         checkout scm
 
-        stage "Build"
+        stage "Hugo Build"
 				sh "make hugo-build"
+
+				stage "Docker Build"
 				retry_backoff(5) { sh "docker pull ${REPO}/${APP}:latest" }
         sh "make build"
 				
