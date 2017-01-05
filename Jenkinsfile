@@ -134,7 +134,6 @@ def notifyBuild(String buildStatus = 'STARTED') {
 def create_pull_exec(int i, String host) {
     cmd = { 
         node {
-            stage "Docker Pull - "+i
             sh """
 ssh ${host} docker pull \${REPOSITORY}\$REPO/${APP}:\$TAG
 ssh ${host} cp /var/www/${APP}/TAG /var/www/${APP}/REVERT || true
