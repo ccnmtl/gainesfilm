@@ -62,10 +62,8 @@ try {
 				
         for (int i = 0; i < hosts.size(); i++) {
             branches["pull-${i}"] = create_pull_exec(i, all_hosts[i])
-						}
-        }
+				}
         parallel branches
-  
     }
 
     node {
