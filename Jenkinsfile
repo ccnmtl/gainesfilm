@@ -15,12 +15,20 @@ env.APP = APP
 env.REPO = REPO
 env.ADMIN_EMAIL = ADMIN_EMAIL
 
-def hosts = HOSTS.split(" ")
+def staging_hosts = STAGING_HOSTS.split(" ")
+def prod_hosts = PROD_HOSTS.split(" ")
 
-def mediacheckURL = null
+def mediacheckURLStaging = null
 try {
-    mediacheckURL = MEDIACHECK_URL
-} catch (mediacheckURLError) {
+    mediacheckURLStaging = MEDIACHECK_URL_STAGING
+} catch (mediacheckURLStagingError) {
+    mediacheckURL = "https://${APP}.stage.ccnmtl.columbia.edu/"
+}
+
+def mediacheckURLProd = null
+try {
+    mediacheckURLProd = MEDIACHECK_URL_PROD
+} catch (mediacheckURLProdError) {
     mediacheckURL = "https://${APP}.ccnmtl.columbia.edu/"
 }
 
@@ -62,30 +70,56 @@ try {
 
     node {
         def branches = [:]
-				stage "Docker Pull"
+				stage "Docker Pull (staging)"
 				
-        for (int i = 0; i < hosts.size(); i++) {
-            branches["pull-${i}"] = create_pull_exec(i, hosts[i])
+        for (int i = 0; i < staging_hosts.size(); i++) {
+            branches["pull-${i}"] = create_pull_exec(i, staging_hosts[i])
 				}
         parallel branches
     }
 
     node {
-				stage "Restart Service"
+				stage "Restart Service (staging)"
         def branches = [:]
-        for (int i = 0; i < hosts.size(); i++) {
-            branches["web-restart-${i}"] = create_restart_web_exec(i, hosts[i])
+        for (int i = 0; i < staging_hosts.size(); i++) {
+            branches["web-restart-${i}"] = create_restart_web_exec(i, staging_hosts[i])
         }
         parallel branches
     }
 
 		node {
 				if (mediacheckURL != null) {
-						stage "mediacheck"
-						retry_backoff(5) { sh "mediacheck --url='${mediacheckURL}' --log-level=info --timeout=${mediacheckTimeout * 1000} ${mediacheckVerify}" }
+						stage "mediacheck (staging)"
+						retry_backoff(5) { sh "mediacheck --url='${mediacheckURLStaging}' --log-level=info --timeout=${mediacheckTimeout * 1000} ${mediacheckVerify}" }
 				}
 		}
 
+    node {
+        def branches = [:]
+				stage "Docker Pull (prod)"
+				
+        for (int i = 0; i < prod_hosts.size(); i++) {
+            branches["pull-${i}"] = create_pull_exec(i, prod_hosts[i])
+				}
+        parallel branches
+    }
+
+    node {
+				stage "Restart Service (prod)"
+        def branches = [:]
+        for (int i = 0; i < prod_hosts.size(); i++) {
+            branches["web-restart-${i}"] = create_restart_web_exec(i, prod_hosts[i])
+        }
+        parallel branches
+    }
+
+		node {
+				if (mediacheckURL != null) {
+						stage "mediacheck (prod)"
+						retry_backoff(5) { sh "mediacheck --url='${mediacheckURLProd}' --log-level=info --timeout=${mediacheckTimeout * 1000} ${mediacheckVerify}" }
+				}
+		}
+		
 } catch (caughtError) {
     err = caughtError
     currentBuild.result = "FAILURE"
