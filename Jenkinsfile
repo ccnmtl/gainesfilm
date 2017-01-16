@@ -22,14 +22,14 @@ def mediacheckURLStaging = null
 try {
     mediacheckURLStaging = MEDIACHECK_URL_STAGING
 } catch (mediacheckURLStagingError) {
-    mediacheckURL = "https://${APP}.stage.ccnmtl.columbia.edu/"
+    mediacheckURLStaging = "https://${APP}.stage.ccnmtl.columbia.edu/"
 }
 
 def mediacheckURLProd = null
 try {
     mediacheckURLProd = MEDIACHECK_URL_PROD
 } catch (mediacheckURLProdError) {
-    mediacheckURL = "https://${APP}.ccnmtl.columbia.edu/"
+    mediacheckURLProd = "https://${APP}.ccnmtl.columbia.edu/"
 }
 
 def mediacheckTimeout = 10
@@ -88,7 +88,7 @@ try {
     }
 
 		node {
-				if (mediacheckURL != null) {
+				if (mediacheckURLStaging != null) {
 						stage "mediacheck (staging)"
 						retry_backoff(5) { sh "mediacheck --url='${mediacheckURLStaging}' --log-level=info --timeout=${mediacheckTimeout * 1000} ${mediacheckVerify}" }
 				}
@@ -114,7 +114,7 @@ try {
     }
 
 		node {
-				if (mediacheckURL != null) {
+				if (mediacheckURLProd != null) {
 						stage "mediacheck (prod)"
 						retry_backoff(5) { sh "mediacheck --url='${mediacheckURLProd}' --log-level=info --timeout=${mediacheckTimeout * 1000} ${mediacheckVerify}" }
 				}
