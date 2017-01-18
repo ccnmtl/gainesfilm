@@ -1,5 +1,11 @@
 </div>
 
+<script src="https://cdn.ravenjs.com/3.9.1/raven.min.js"></script>
+<script>
+ Raven.config('https://4ad592fbf5854946bd0997c977a70762@sentry.io/130358', {
+    whitelistUrls: [/gainesfilm\.ccnmtl\.columbia\.edu/]
+ }).install();
+</script>
 </body>
 
 </html>
