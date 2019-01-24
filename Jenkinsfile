@@ -185,8 +185,8 @@ def create_restart_web_exec(int i, String host) {
     cmd = {
         node {
             sh """
-ssh ${host} sudo stop ${APP} || true
-ssh ${host} sudo start ${APP}
+ssh ${host} sudo /usr/sbin/service ${APP} stop || true
+ssh ${host} sudo /usr/sbin/service ${APP} start
 """
         }
     }
