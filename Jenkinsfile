@@ -88,13 +88,6 @@ try {
     }
 
     node {
-        if (mediacheckURLStaging != null) {
-            stage "mediacheck (staging)"
-            retry_backoff(5) { sh "mediacheck --url='${mediacheckURLStaging}' --log-level=info --timeout=${mediacheckTimeout * 1000} ${mediacheckVerify}" }
-        }
-    }
-
-    node {
         def branches = [:]
         stage "Docker Pull (prod)"
 
