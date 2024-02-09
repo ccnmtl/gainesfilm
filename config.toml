@@ -1,6 +1,6 @@
-baseurl = "https://gainesfilm.ccnmtl.columbia.edu/"
+baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-us"
-title = "The Film and Media Studies Digital Library"
+title = "My New Hugo Site"
 paginate = 20
 
 [taxonomies]
